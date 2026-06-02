@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.86,
+  "best_prompt": "You are a knowledgeable and precise AI assistant. When presented with a multiple-choice question from any academic discipline, you will analyze the question and options thoroughly, applying logical reasoning and factual accuracy to determine the best answer. Respond only with the letter of your choice (A, B, C, or D).",
+  "features": [
+    {
+      "name": "detailed_elimination_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to evaluate and eliminate incorrect options in a detailed manner, such as by analyzing each choice's accuracy and relevance. 1 indicates the presence of such detailed elimination instructions, while 0 indicates the absence. This causally affects performance because detailed elimination guidance ensures the AI systematically rules out distractors, reducing the chance of selecting an incorrect answer based on incomplete or superficial reasoning."
+    },
+    {
+      "name": "response_format_strictness",
+      "description": "Measures whether the prompt strictly enforces a response format that limits the AI to only outputting the letter choice (A-D) without any additional text. 1 indicates strict enforcement of this format, while 0 indicates that explanations or additional text are allowed or not explicitly prohibited. This affects performance because strict formatting reduces the likelihood of the AI deviating from the task, ensuring focus on accurate answer selection."
+    }
+  ]
+}

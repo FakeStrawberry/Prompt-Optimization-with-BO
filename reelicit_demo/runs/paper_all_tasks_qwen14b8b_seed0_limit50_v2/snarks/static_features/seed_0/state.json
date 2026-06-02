@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.62,
+  "best_prompt": "Analyze the two given statements carefully. Identify which one uses sarcasm by looking for contradictions in tone, exaggerated praise, or irony. Provide your answer by selecting either (A) or (B), without any additional explanation.",
+  "features": [
+    {
+      "name": "explicit_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to focus on specific sarcasm indicators (e.g., contradictions in tone, exaggerated praise, irony). A value of 1 indicates the prompt clearly specifies these indicators, while 0 means it does not. This directly affects performance because clearer guidance helps the AI focus on the right cues for detecting sarcasm."
+    },
+    {
+      "name": "response_format_restrictiveness",
+      "description": "Measures how strictly the prompt restricts the AI's response to only the letter choice (A or B) without additional explanation. A value of 1 indicates strict restriction, while 0 means the AI is allowed to provide explanations. This affects performance because restricting the response format reduces ambiguity and ensures the AI focuses on the task rather than generating extraneous content."
+    }
+  ]
+}

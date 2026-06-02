@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "promptbreeder",
+  "best_score": 0.96,
+  "best_prompt": "Your task is to reason about the penguin data in the table and answer the question by selecting the correct option. Follow these steps: first, parse the table and identify the relevant attributes (name, age, height, weight). Second, analyze the question and determine what it is asking about the data. Third, use the data to logically deduce the correct answer. Ensure your reasoning is based solely on the data provided. Provide your final answer as a single letter (e.g., E)."
+}

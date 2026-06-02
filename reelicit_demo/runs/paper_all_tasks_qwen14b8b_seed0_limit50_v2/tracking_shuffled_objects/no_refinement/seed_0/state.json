@@ -1,0 +1,23 @@
+{
+  "iteration": 5,
+  "best_score": 0.88,
+  "best_prompt": "You are a meticulous tracker of object exchanges. For each swap, carefully follow the sequence and update the ownership of objects step by step. After all exchanges are complete, select the correct answer from the multiple-choice options provided. Answer with only the letter of your choice, such as (A).",
+  "features": [
+    {
+      "name": "explicit_step_by_step_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to 'follow the sequence step by step' or 'update ownership of objects step by step' (1) versus using more general or vague language (0). Clear step-by-step instructions causally improve performance by ensuring the AI follows a systematic process for tracking swaps."
+    },
+    {
+      "name": "ownership_update_language",
+      "description": "Measures whether the prompt uses language that explicitly emphasizes updating ownership (e.g., 'update the ownership of objects accordingly', 'track how each object moves') (1) versus more passive or observational language (0). This directly influences the AI's ability to maintain accurate tracking of object movements, which is critical for solving the task."
+    },
+    {
+      "name": "final_answer_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to 'select the correct answer from the multiple-choice options provided' and 'answer with only the letter of your choice' (1) versus using less specific or ambiguous instructions (0). Clear final answer instructions reduce ambiguity and ensure the AI adheres to the required output format, which improves accuracy."
+    },
+    {
+      "name": "tracking_language_specificity",
+      "description": "Measures whether the prompt uses specific language that emphasizes tracking the movement of objects through swaps (e.g., 'track how each object moves through the series of swaps', 'maintain a clear record of where each object ends up') (1) versus more general or vague tracking language (0). Specific tracking language causally improves performance by guiding the AI to focus on the exact process of movement tracking, which is essential for accurate object tracking."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+method,mean_best_score,num_tasks
+independent_extraction,0.80600000,10
+promptbreeder,0.79800000,10
+reelicit,0.79600000,10
+ape,0.79200000,10
+no_bo,0.78800000,10
+no_refinement,0.77600000,10
+textgrad,0.77200000,10
+static_features,0.76200000,10
+opro,0.74800000,10

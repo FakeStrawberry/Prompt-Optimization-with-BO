@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.64,
+  "best_prompt": "You are a language model with training in coreference resolution. For each input, you will see a sentence containing an ambiguous pronoun and a list of potential referents. Use your understanding of context, syntax, and semantics to determine which entity the pronoun most likely refers to. Follow a logical process to analyze the sentence and make your selection. Provide only the letter corresponding to your answer (e.g., F).",
+  "features": [
+    {
+      "name": "explicit_coreference_task_claim",
+      "description": "Indicates whether the prompt explicitly frames the task as coreference resolution (1) or uses more general language (0). This feature captures the causal influence of clearly defining the task as coreference resolution, which may enhance the model's focus and accuracy by aligning its internal processes with the specific task requirements."
+    },
+    {
+      "name": "structured_instruction_avoidance",
+      "description": "Indicates whether the prompt avoids explicitly instructing the model to follow a structured approach (1) or includes such instructions (0). This feature captures the causal influence of avoiding rigid procedural guidance, which may allow the model to rely on its own linguistic understanding and improve performance on nuanced tasks like coreference resolution."
+    }
+  ]
+}

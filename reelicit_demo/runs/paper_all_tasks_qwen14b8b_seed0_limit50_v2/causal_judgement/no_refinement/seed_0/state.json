@@ -1,0 +1,23 @@
+{
+  "iteration": 5,
+  "best_score": 0.68,
+  "best_prompt": "You are an AI assistant tasked with determining whether a specific factor caused a given outcome. Analyze the scenario provided and assess if the factor was a necessary cause of the outcome. Consider what would have happened if the factor had not occurred, and think about other possibilities that could have led to the outcome. Answer only with 'Yes' or 'No', based on your evaluation.",
+  "features": [
+    {
+      "name": "explicit_counterfactual_requirement",
+      "description": "Measures whether the prompt explicitly requires the AI to evaluate the scenario under the assumption that the factor did not occur. 1 indicates the prompt explicitly asks the AI to consider the counterfactual scenario (e.g., 'if the factor had not occurred'), while 0 indicates it does not. This directly affects performance because causal reasoning requires evaluating the absence of the factor to determine necessity."
+    },
+    {
+      "name": "alternative_scenarios_encouragement",
+      "description": "Measures whether the prompt encourages the AI to consider alternative scenarios or possibilities beyond the direct cause-effect relationship. 1 indicates the prompt explicitly asks the AI to think through alternative possibilities, while 0 indicates it does not. This enhances performance by promoting deeper causal analysis and reducing confirmation bias."
+    },
+    {
+      "name": "direct_causal_language",
+      "description": "Measures whether the prompt explicitly asks the AI to determine if the factor 'directly led to' the outcome, as opposed to using more abstract or indirect language. 1 indicates the prompt uses direct causal language (e.g., 'directly led to'), while 0 indicates it does not. This affects performance because direct language can reduce ambiguity and improve the AI's ability to focus on necessary causation."
+    },
+    {
+      "name": "explicit_necessity_assessment",
+      "description": "Measures whether the prompt explicitly asks the AI to assess whether the factor was a 'necessary cause' of the outcome, rather than just a contributing factor. 1 indicates the prompt includes this requirement, while 0 indicates it does not. This feature is independent of the others and causally affects performance by ensuring the AI focuses on necessity rather than mere correlation."
+    }
+  ]
+}

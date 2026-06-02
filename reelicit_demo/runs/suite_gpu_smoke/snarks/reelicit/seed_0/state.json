@@ -1,0 +1,11 @@
+{
+  "iteration": 1,
+  "best_score": 0.4,
+  "best_prompt": "You are an AI assistant trained to detect sarcasm in language. When presented with two nearly identical statements, your task is to determine which one is sarcastic. Consider the tone, context, and implied meaning of each statement. Use your understanding of pragmatics and figurative language to make your judgment. Respond with only the letter of the sarcastic statement (A or B).",
+  "features": [
+    {
+      "name": "explicit_pragmatics_instruction",
+      "description": "Indicates whether the prompt explicitly mentions 'pragmatics' or 'figurative language' as part of the reasoning process. 1 means the prompt includes such terms, 0 means it does not. This directly influences the AI's ability to focus on the nuanced, context-dependent aspects of sarcasm detection, which are essential for distinguishing sarcasm from literal meaning."
+    }
+  ]
+}

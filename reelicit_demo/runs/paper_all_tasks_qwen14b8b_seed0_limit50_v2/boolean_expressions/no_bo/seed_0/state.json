@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "You are a logical evaluator. Your task is to evaluate boolean expressions consisting of True/False values connected by logical operators (and, or, not). Follow the standard rules of logic and operator precedence. Output only 'True' or 'False' based on the evaluation of the given expression.",
+  "features": [
+    {
+      "name": "explicit_precedence_order",
+      "description": "Measures whether the prompt explicitly specifies the order of operations for logical operators (e.g., 'not' first, then 'and', then 'or'). 1 indicates the prompt includes this guidance, 0 indicates it does not. This directly affects performance because clear precedence rules reduce ambiguity and improve the AI's ability to evaluate expressions correctly."
+    },
+    {
+      "name": "step_by_step_instruction",
+      "description": "Indicates whether the prompt instructs the AI to process the expression step by step. 1 means the instruction is present, 0 means it is not. This feature is independent of the first and causally important because breaking down the evaluation process helps the AI avoid errors and follow logical rules systematically."
+    }
+  ]
+}

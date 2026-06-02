@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.82,
+  "best_prompt": "Use a structured approach: list each person and object, then update their positions after every swap. At the end, match each object to its final owner. Choose the correct answer from the options given. Respond with just the letter, e.g., (C).",
+  "features": [
+    {
+      "name": "structured_methodology_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to use a structured or methodical approach (e.g., 'list each person and object', 'update ownership step by step'). 1 indicates the presence of such instructions, 0 indicates absence. This directly influences performance by ensuring the AI systematically tracks swaps rather than relying on intuition or memory, which is critical for accuracy in tracking object exchanges."
+    },
+    {
+      "name": "explicit_tracking_mechanism",
+      "description": "Measures whether the prompt explicitly mentions maintaining a record (e.g., 'keep a clear mental or written record', 'update their positions after every swap'). 1 indicates the presence of such a mechanism, 0 indicates absence. This causally affects performance by encouraging the AI to maintain a persistent tracking state, which is essential for correctly resolving the final positions of objects after multiple swaps."
+    }
+  ]
+}

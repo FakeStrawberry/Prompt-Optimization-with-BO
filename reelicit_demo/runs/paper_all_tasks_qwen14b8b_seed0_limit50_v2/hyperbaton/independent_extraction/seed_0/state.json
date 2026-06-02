@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.94,
+  "best_prompt": "Follow the standard rules of English adjective order: opinion, size, age, shape, color, origin, material, purpose. Given two sentences with adjectives in different orders, identify the one that adheres to this sequence.",
+  "features": [
+    {
+      "name": "rule_reinforcement",
+      "description": "1 if the prompt explicitly repeats the adjective order rule in more than one place (e.g., in the initial instruction and again when describing the task), 0 otherwise. This feature causally affects performance because repetition reinforces the rule in the AI's processing, increasing the likelihood of accurate application."
+    },
+    {
+      "name": "instruction_clarity",
+      "description": "1 if the prompt explicitly states that the response should be only the letter (A or B) with no additional text, 0 otherwise. This feature causally affects performance because unambiguous output instructions reduce error-prone deviations and ensure the AI focuses solely on the task, improving accuracy."
+    },
+    {
+      "name": "rule_explicitness",
+      "description": "1 if the prompt explicitly lists the full adjective order sequence (opinion, size, age, shape, color, origin, material, purpose) in the instruction, 0 otherwise. This feature causally affects performance because explicitly stating the full sequence provides a clear reference for the AI to compare against, improving accuracy in identifying the correct order."
+    }
+  ]
+}

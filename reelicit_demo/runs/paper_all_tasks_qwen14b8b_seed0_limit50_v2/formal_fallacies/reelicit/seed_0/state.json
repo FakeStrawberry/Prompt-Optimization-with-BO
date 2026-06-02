@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.66,
+  "best_prompt": "Analyze the deductive argument provided, which includes premises and a conclusion. Use formal logic to determine if the conclusion necessarily follows from the premises. Your answer must be either 'valid' or 'invalid' with no additional text.",
+  "features": [
+    {
+      "name": "formal_logic_directive_clarity",
+      "description": "Measures whether the prompt explicitly and unambiguously directs the AI to use formal logic to assess validity, rather than relying on intuitive or informal reasoning. 1 indicates a clear directive to use formal logic, 0 indicates a less precise or ambiguous directive. This feature causally affects performance because clarity in specifying the method (formal logic) ensures the AI applies the correct reasoning framework, which is essential for evaluating deductive validity."
+    },
+    {
+      "name": "response_format_restrictiveness",
+      "description": "Measures whether the prompt strictly restricts the AI's response to only 'valid' or 'invalid' with no additional text. 1 indicates strict restriction, 0 indicates a more permissive response format. This feature causally affects performance because restricting the response format reduces ambiguity and ensures the AI focuses solely on the logical evaluation without being distracted by the need to provide explanations or justifications."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "iteration": 5,
+  "best_score": 0.56,
+  "best_prompt": "You are an AI assistant specialized in coreference resolution. Given a sentence with an ambiguous pronoun and a list of possible entities, your task is to determine which entity the pronoun refers to. Your task is to determine which entity the pronoun refers to by carefully analyzing the sentence and considering the context, grammar, and coreference relationships. Choose the most appropriate option from the provided choices and respond with only the letter of your answer (e.g., A).",
+  "features": [
+    {
+      "name": "explicit_coreference_instruction",
+      "description": "Indicates whether the prompt explicitly mentions 'coreference resolution' or similar terminology. 1 means the prompt includes explicit reference to coreference resolution, which directly informs the AI of the task's nature and improves its ability to apply relevant linguistic knowledge. 0 means it does not. This feature is independent of others because a prompt can mention coreference explicitly without specifying other aspects like grammar or context."
+    },
+    {
+      "name": "contextual_analysis_emphasis",
+      "description": "Indicates whether the prompt explicitly emphasizes the importance of analyzing context when resolving pronoun ambiguity. 1 means the prompt explicitly instructs the AI to consider context, which is crucial for resolving ambiguous pronouns. 0 means it does not. This feature is independent of explicit_coreference_instruction because a prompt can emphasize context without mentioning coreference explicitly, and vice versa."
+    },
+    {
+      "name": "task_instruction_clarity",
+      "description": "Indicates whether the prompt provides a clear, step-by-step instruction or a vague, general instruction. 1 means the prompt includes a clear, structured task outline (e.g., numbered steps or explicit actions to take), which helps the AI focus on the correct process. 0 means the instruction is vague or lacks structure, which may lead to confusion or off-task behavior. This feature is independent of the other two because clarity of instruction can exist without explicit mention of coreference or context."
+    },
+    {
+      "name": "repetition_of_task_goal",
+      "description": "Indicates whether the prompt explicitly restates the task goal (e.g., 'determine which entity the pronoun refers to') more than once. 1 means the prompt includes multiple restatements of the task goal, which reinforces the objective and helps the AI maintain focus. 0 means the task goal is mentioned only once or not at all. This feature is independent of the others because repetition of the task goal does not necessarily correlate with explicit mention of coreference, context, or clarity of instruction."
+    },
+    {
+      "name": "linguistic_pattern_inclusion",
+      "description": "Indicates whether the prompt explicitly mentions the use of linguistic patterns (e.g., 'coreference and linguistic patterns') as a method for resolving pronoun ambiguity. 1 means the prompt includes such references, which provides the AI with a more detailed strategy for resolving ambiguity. 0 means it does not. This feature is independent of the others because mentioning linguistic patterns does not necessarily correlate with explicit mention of coreference, context, clarity of instruction, or repetition of the task goal."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.94,
+  "best_prompt": "You are a boolean expression interpreter. Evaluate the given expression strictly according to standard logic rules. Do not assume any order of operations unless explicitly stated. Output only the final result: 'True' or 'False'.",
+  "features": [
+    {
+      "name": "strict_precedence_disclaimer",
+      "description": "Measures whether the prompt explicitly instructs the AI to avoid assuming operator precedence unless explicitly stated. 1 indicates the prompt includes this disclaimer, 0 indicates it does not. This directly affects performance by preventing the AI from making incorrect assumptions about evaluation order, which is critical for accurate boolean expression evaluation."
+    },
+    {
+      "name": "explicit_precedence_details",
+      "description": "Measures whether the prompt explicitly lists the precedence of logical operators (e.g., 'not' > 'and' > 'or'). 1 indicates the prompt includes this detail, 0 indicates it does not. While this provides clarity, it may introduce redundancy or confusion if the AI is already instructed to follow standard rules, thus potentially reducing performance."
+    }
+  ]
+}

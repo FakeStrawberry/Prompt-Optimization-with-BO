@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "promptbreeder",
+  "best_score": 0.9,
+  "best_prompt": "Use clear and concise reasoning to solve the math word problem. Present your thought process in a logical sequence, showing all necessary calculations. After solving, provide the final answer in a box. Your answer must be exact and match the problem's requirements precisely."
+}

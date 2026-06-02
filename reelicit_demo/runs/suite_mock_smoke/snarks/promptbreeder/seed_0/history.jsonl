@@ -1,0 +1,4 @@
+{"index": 0, "score": 0.5125255959833899, "prompt": "Solve the task carefully. Analyze the input step by step, then provide only the requested final answer.", "embedding": {}, "meta": {"iteration": "0", "candidate": "0", "method": "D0"}}
+{"index": 1, "score": 0.49661622427042257, "prompt": "Focus on the task-specific cues, check the answer format, and output only the final choice or value.", "embedding": {}, "meta": {"iteration": "0", "candidate": "1", "method": "D0"}}
+{"index": 2, "score": 0.4923325128809974, "prompt": "Reason carefully, follow the requested output format, and provide only the final answer.", "embedding": {}, "meta": {"iteration": "1", "candidate": "0", "method": "promptbreeder"}}
+{"index": 3, "score": 0.4923325128809974, "prompt": "Reason carefully, follow the requested output format, and provide only the final answer.", "embedding": {}, "meta": {"iteration": "1", "candidate": "1", "method": "promptbreeder"}}

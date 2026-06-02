@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.76,
+  "best_prompt": "Analyze the penguin data table and answer the question by reasoning through the attributes. Use clear and logical steps to determine the best answer. Your final response must be only the letter of the correct choice (e.g., E), without any additional text or explanation.",
+  "features": [
+    {
+      "name": "explicit_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to output only the letter of the correct answer without additional text. A value of 1 indicates the prompt clearly specifies this requirement, while 0 indicates it does not. This directly affects performance because clear instructions reduce ambiguity and ensure the AI adheres to the required output format, improving accuracy."
+    },
+    {
+      "name": "reasoning_encouragement",
+      "description": "Measures whether the prompt explicitly encourages the AI to reason through the attributes (e.g., 'use logical reasoning' or 'think through each step'). A value of 1 indicates such encouragement is present, while 0 indicates it is absent. This affects performance because explicitly prompting reasoning improves the AI's ability to process and interpret the table correctly, leading to more accurate answers."
+    }
+  ]
+}

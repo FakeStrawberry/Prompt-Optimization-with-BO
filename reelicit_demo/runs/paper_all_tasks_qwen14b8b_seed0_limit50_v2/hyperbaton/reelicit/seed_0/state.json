@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.94,
+  "best_prompt": "Analyze the two sentences carefully. The standard English adjective order is: opinion, size, age, shape, color, origin, material, purpose. Determine which one uses the correct order of adjectives according to English conventions. Choose the correct sentence by responding with only (A) or (B).",
+  "features": [
+    {
+      "name": "guideline_placement",
+      "description": "1 if the standard English adjective order guideline is presented early in the prompt (before the task instruction), 0 otherwise. This feature affects performance because presenting the guideline first primes the AI with the necessary rule before it is asked to apply it, improving recall and accuracy."
+    },
+    {
+      "name": "task_frame_clarity",
+      "description": "1 if the prompt explicitly states that the task involves comparing two sentences that differ only in adjective ordering, 0 otherwise. This feature affects performance because framing the task clearly helps the AI focus on the specific comparison required, reducing ambiguity and improving accuracy."
+    },
+    {
+      "name": "rule_repetition",
+      "description": "1 if the prompt explicitly repeats the adjective order rule in proximity to the task instruction, 0 otherwise. This feature affects performance because repeating the rule near the task reinforces the rule in the AI's working memory, reducing the chance of forgetting or misapplying it during the decision-making process."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "config": "configs/paper.json",
+  "tasks": "snarks",
+  "methods": "reelicit ape no_bo",
+  "seeds": "0",
+  "mode": "local-benchmark",
+  "local_model": "/nas1/zyj/models/Qwen3-14B",
+  "local_target_model": "/nas1/zyj/models/Qwen3-8B",
+  "optimizer_device": "cuda:1",
+  "target_device": "cuda:0",
+  "limit": 5,
+  "q": 2,
+  "T": 2,
+  "K": 1,
+  "M": 1,
+  "include_format_in_context": true,
+  "output_root": "runs/suite_gpu_smoke"
+}

@@ -1,0 +1,23 @@
+{
+  "iteration": 5,
+  "best_score": 0.58,
+  "best_prompt": "Identify the correct referent of the pronoun in the given sentence. You will be presented with a sentence and a list of possible entities. Use your understanding of grammar, context, and coreference to select the most likely antecedent. Provide your answer as a single letter choice, e.g., (B).",
+  "features": [
+    {
+      "name": "redundant_output_instructions",
+      "description": "Measures whether the prompt contains redundant or repeated instructions about the output format (e.g., saying 'Provide your answer as a single letter choice, e.g., (B)' more than once). 1 indicates the presence of redundancy, 0 indicates no redundancy. Redundant instructions may confuse the AI and reduce focus on the core task, thus negatively affecting performance."
+    },
+    {
+      "name": "explicit_coreference_guidance",
+      "description": "Measures whether the prompt explicitly mentions 'coreference' or 'coreference resolution' as a guiding concept. 1 indicates the presence of such guidance, 0 indicates it is missing. Explicit mention of coreference helps the AI focus on the specific linguistic phenomenon being tested, thereby improving performance on coreference resolution tasks."
+    },
+    {
+      "name": "task_specific_role_definition",
+      "description": "Measures whether the prompt explicitly defines the AI's role in relation to the specific task (e.g., 'You are a coreference resolver'). 1 indicates the presence of such a role definition, 0 indicates it is missing. A clear role definition helps the AI activate the correct reasoning mode, thereby improving performance on the task."
+    },
+    {
+      "name": "contextual_analysis_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to analyze the sentence's context or structure when resolving the pronoun. 1 indicates the presence of such an instruction, 0 indicates it is missing. Contextual analysis is critical for resolving ambiguous pronouns, and explicit instructions to consider context can improve the AI's accuracy on this task."
+    }
+  ]
+}

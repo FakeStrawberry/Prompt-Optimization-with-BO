@@ -1,0 +1,42 @@
+{
+  "paper": "Embedding by Elicitation: Dynamic Representations for Bayesian Optimization of System Prompts",
+  "default_task": "snarks",
+  "hyperparameters": {
+    "N": 30,
+    "q": 5,
+    "T": 6,
+    "K": 5,
+    "M": 10,
+    "tau": 0.1,
+    "b": 10,
+    "nmax": 12,
+    "Pmax": 20
+  },
+  "models": {
+    "optimizer_model": "meta-llama/Llama-3.3-70B-Instruct",
+    "target_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "optimizer_temperature": 0.7,
+    "target_temperature": 0.0,
+    "target_do_sample": false,
+    "context_window": 128000
+  },
+  "bo": {
+    "surrogate": "BoTorch SingleTaskGP",
+    "kernel": "Matern 5/2 with ARD",
+    "input_transform": "Normalize(d=d)",
+    "outcome_transform": "Standardize(m=1)",
+    "fit": "fit_gpytorch_mll with ExactMarginalLogLikelihood",
+    "acquisition": "qLogNoisyExpectedImprovement",
+    "num_restarts": 20,
+    "raw_samples": 512,
+    "domain": "[0, 1]^d"
+  },
+  "evaluation": {
+    "interface": "aggregate-only prompt-level scalar",
+    "decoding": "zero-shot greedy",
+    "GSM8K": 500,
+    "MMLU": 500,
+    "BBH_each": 250,
+    "seeds_in_paper": 30
+  }
+}

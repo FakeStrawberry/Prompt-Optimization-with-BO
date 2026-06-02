@@ -1,0 +1,15 @@
+{
+  "iteration": 1,
+  "best_score": 1.0,
+  "best_prompt": "You are an AI assistant tasked with identifying sarcasm in text. You will receive two nearly identical statements. Your job is to determine which one is sarcastic by analyzing tone, context, and figurative language. Consider the speaker's intent, the situation, and any subtle cues that indicate irony or mockery. Provide your answer with a clear explanation of why you believe one statement is sarcastic and the other is not.",
+  "features": [
+    {
+      "name": "task_clarity",
+      "description": "Measures how clearly the task is defined. 1 indicates the prompt explicitly states the AI's role and the specific goal (identifying sarcasm between two nearly identical statements). 0 indicates the prompt is more general or lacks explicit instructions. This causally affects performance by reducing ambiguity and ensuring the AI understands the exact task."
+    },
+    {
+      "name": "contextual_guidance",
+      "description": "Measures the extent to which the prompt includes guidance on analyzing tone, context, and figurative language. 1 indicates the prompt explicitly asks the AI to consider speaker intent, situation, and subtle cues. 0 indicates the prompt focuses more on surface-level analysis like word choice and implied meaning. This causally affects performance by encouraging deeper, more nuanced analysis."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.66,
+  "best_prompt": "You are a logical reasoning expert. Given a set of premises and a conclusion, your task is to determine if the conclusion necessarily follows from the premises using formal logic. Answer only with 'valid' or 'invalid' based on logical validity, not on factual truth.",
+  "features": [
+    {
+      "name": "explicit_instruction_clarity",
+      "description": "Measures whether the prompt explicitly and unambiguously instructs the AI to focus solely on logical structure and not use real-world knowledge. 1 indicates clear and explicit instruction, 0 indicates vague or absent instruction. This feature causally affects performance because clarity in instruction ensures the AI adheres strictly to formal logic, avoiding errors from external knowledge interference."
+    },
+    {
+      "name": "step_by_step_guidance",
+      "description": "Measures whether the prompt explicitly instructs the AI to follow a step-by-step reasoning process (e.g., identifying premises, conclusion, and applying logical rules). 1 indicates the presence of such guidance, 0 indicates its absence. This feature causally affects performance because a structured approach helps the AI systematically evaluate logical validity, reducing errors from oversight or misinterpretation."
+    },
+    {
+      "name": "response_format_restrictiveness",
+      "description": "Measures whether the prompt explicitly restricts the AI to answering only with 'valid' or 'invalid' and no additional explanation. 1 indicates strict restriction, 0 indicates absence of such restriction. This feature causally affects performance because limiting the response format reduces the likelihood of the AI providing incorrect justifications or deviating from the required output."
+    }
+  ]
+}

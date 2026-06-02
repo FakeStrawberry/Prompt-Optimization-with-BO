@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.62,
+  "best_prompt": "Carefully compare the two statements. Look for clues such as exaggerated praise, ironic phrasing, or contradictions in tone. Your goal is to identify the sarcastic one. Provide your answer as a single letter: (A) or (B).",
+  "features": [
+    {
+      "name": "explicit_instruction_clarity",
+      "description": "Measures whether the prompt provides clear, direct instructions on how to approach the sarcasm detection task. 1 indicates the prompt explicitly tells the AI to look for specific cues (e.g., 'Look for clues such as...'), while 0 indicates vague or generic instructions (e.g., 'Determine which one is sarcastic'). This feature causally affects performance because clear instructions guide the AI to focus on relevant aspects of the task, improving its ability to detect sarcasm."
+    },
+    {
+      "name": "pragmatics_language_specificity",
+      "description": "Measures whether the prompt uses specific language related to pragmatics (e.g., 'figurative meaning', 'implied intent', 'context') rather than general terms (e.g., 'tone', 'language'). 1 indicates the use of precise pragmatic terminology, while 0 indicates more generic language. This feature causally affects performance because specific language about pragmatics helps the AI better understand the nuances of sarcasm, which is inherently pragmatic in nature."
+    }
+  ]
+}

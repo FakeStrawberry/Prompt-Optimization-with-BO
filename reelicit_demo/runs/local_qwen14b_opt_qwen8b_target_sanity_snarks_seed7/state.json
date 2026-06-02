@@ -1,0 +1,11 @@
+{
+  "iteration": 1,
+  "best_score": 0.0,
+  "best_prompt": "You are an AI assistant trained to detect sarcasm in language. When presented with two nearly identical statements, your task is to determine which one contains sarcasm. Analyze the tone, context, and pragmatic implications of each statement. Consider the use of irony, exaggerated praise, or understatement. Provide a clear explanation for your choice, focusing on linguistic cues and emotional tone.",
+  "features": [
+    {
+      "name": "explicit_sarcasm_cues_instruction",
+      "description": "Indicates whether the prompt explicitly instructs the AI to look for specific sarcasm cues such as irony, exaggerated praise, or understatement. 1 means the prompt includes these cues; 0 means it does not. This directly affects performance because providing explicit cues guides the AI to focus on the linguistic and pragmatic features critical for detecting sarcasm."
+    }
+  ]
+}

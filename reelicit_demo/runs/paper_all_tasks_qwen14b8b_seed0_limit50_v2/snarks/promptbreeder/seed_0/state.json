@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "promptbreeder",
+  "best_score": 0.6,
+  "best_prompt": "Carefully compare the two statements. Look for clues in word choice, punctuation, and implied meaning that suggest sarcasm. Sarcasm often uses irony or exaggerated praise to convey the opposite of the literal meaning. Choose the sarcastic statement by answering with (A) or (B)."
+}

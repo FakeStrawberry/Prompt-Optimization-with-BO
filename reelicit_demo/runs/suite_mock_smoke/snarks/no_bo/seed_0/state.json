@@ -1,0 +1,19 @@
+{
+  "iteration": 1,
+  "best_score": 0.5922460420511909,
+  "best_prompt": "You are a precise assistant for this task. Attend to task-specific cues such as exact wording, logical structure, ambiguity, tables, swaps, tone, or arithmetic consistency. Return only the final answer in the requested format, with no extra text.",
+  "features": [
+    {
+      "name": "format_discipline",
+      "description": "Measures how strongly the prompt enforces the exact answer format required by the task. 0 means no output-format control; 1 means it clearly requires only the final answer in the requested form, which directly affects accuracy under regex-based evaluation."
+    },
+    {
+      "name": "explicit_reasoning",
+      "description": "Measures whether the prompt asks the assistant to reason through task-relevant steps before answering. 0 means direct guessing; 1 means clear internal or stepwise analysis appropriate for the task."
+    },
+    {
+      "name": "task_specific_cues",
+      "description": "Measures whether the prompt names cues specific to this task, such as logical operators, causal counterfactuals, ambiguity resolution, table parsing, object tracking, sarcasm cues, adjective order, or arithmetic consistency. 0 means generic advice; 1 means concrete task-specific cues."
+    }
+  ]
+}

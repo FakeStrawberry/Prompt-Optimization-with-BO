@@ -1,0 +1,19 @@
+{
+  "config": "configs/paper.json",
+  "tasks": "gsm8k snarks",
+  "methods": "reelicit ape opro promptbreeder textgrad no_refinement no_bo static_features independent_extraction",
+  "seeds": "0",
+  "mode": "local-benchmark",
+  "local_model": "/nas1/zyj/models/Qwen3-14B",
+  "local_target_model": "/nas1/zyj/models/Qwen3-8B",
+  "optimizer_device": "cuda:1",
+  "target_device": "cuda:0",
+  "limit": 50,
+  "q": null,
+  "T": null,
+  "K": null,
+  "M": null,
+  "include_format_in_context": true,
+  "output_root": "runs/paper_available_tasks_qwen14b8b_seed0_limit50",
+  "skip_completed": true
+}

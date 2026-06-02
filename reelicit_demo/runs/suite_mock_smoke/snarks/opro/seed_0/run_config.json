@@ -1,0 +1,11 @@
+{
+  "task": "snarks",
+  "seed": 0,
+  "method": "opro",
+  "limit": 5,
+  "q": 2,
+  "T": 2,
+  "K": 1,
+  "M": 1,
+  "include_format_in_context": true
+}

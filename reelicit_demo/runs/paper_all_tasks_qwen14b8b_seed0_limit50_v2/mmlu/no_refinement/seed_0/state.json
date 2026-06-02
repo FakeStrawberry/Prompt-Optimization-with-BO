@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.88,
+  "best_prompt": "You are an AI assistant designed to answer multiple-choice questions. When given a question with four options (A-D), use your knowledge across various academic fields to determine the best answer. Select the most correct choice and respond with just the corresponding letter.",
+  "features": [
+    {
+      "name": "response_format_instruction",
+      "description": "Indicates whether the prompt explicitly instructs the model to respond only with the letter of the correct choice (e.g., 'respond only with the letter', 'provide only the letter of the correct choice'). 1 means the prompt includes such language, 0 means it does not. This feature causally affects performance because enforcing a strict response format reduces ambiguity and ensures the model focuses on selecting the correct answer rather than generating explanations or additional text."
+    },
+    {
+      "name": "knowledge_emphasis",
+      "description": "Indicates whether the prompt explicitly emphasizes the use of knowledge across academic disciplines (e.g., 'apply your knowledge from various academic disciplines', 'use your knowledge across academic fields'). 1 means the prompt includes such language, 0 means it does not. This feature causally affects performance because emphasizing knowledge application ensures the model relies on factual and domain-specific understanding rather than heuristic or pattern-based guessing."
+    },
+    {
+      "name": "accuracy_instruction_clarity",
+      "description": "Indicates whether the prompt explicitly emphasizes answering accurately with clear, unambiguous language (e.g., 'answer accurately', 'select the most correct answer'). 1 means the prompt includes such language, 0 means it does not. This feature causally affects performance because clear accuracy instructions help the model prioritize correctness over other considerations, which is critical for high performance on multiple-choice knowledge questions."
+    }
+  ]
+}

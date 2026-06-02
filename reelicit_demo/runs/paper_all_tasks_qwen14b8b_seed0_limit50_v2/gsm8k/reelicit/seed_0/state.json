@@ -1,0 +1,23 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "You are a math problem solver. When given a grade-school math word problem, you will break it down into clear, logical steps. Analyze the problem, identify the operations needed, and solve it step by step. Present your reasoning in a clear and organized manner, and end with the final numerical answer inside a box.",
+  "features": [
+    {
+      "name": "repetition_of_key_instructions",
+      "description": "Indicates whether the prompt repeats key instructions (e.g., 'break it down into clear, logical steps') multiple times to reinforce the expected process. 1 means the instructions are repeated, while 0 means they are not. This feature is causal because repetition of instructions helps the AI internalize the expected process, reducing ambiguity and improving task adherence."
+    },
+    {
+      "name": "explicit_final_answer_format",
+      "description": "Indicates whether the prompt explicitly specifies the final answer must be presented in a particular format (e.g., 'inside a box' or 'as the last line of your response'). 1 means the format is explicitly specified, while 0 means it is not. This feature is causal because specifying the final answer format improves the likelihood of the AI producing the correct answer in the required format, which is essential for exact-match accuracy."
+    },
+    {
+      "name": "step_instruction_clarity",
+      "description": "Indicates whether the prompt provides clear, actionable instructions for breaking down the problem into steps (e.g., 'identify the operations needed', 'perform calculations step by step'). 1 means the instructions are clear and specific, while 0 means they are vague or absent. This feature is causal because clear step instructions directly improve the AI's ability to follow a multi-step reasoning process, which is critical for solving complex word problems."
+    },
+    {
+      "name": "conflicting_final_answer_instructions",
+      "description": "Indicates whether the prompt contains conflicting instructions about the final answer format (e.g., 'inside a box' and 'as the last line of your response'). 1 means there is a conflict, while 0 means there is no conflict. This feature is causal because conflicting instructions can confuse the AI and reduce the likelihood of producing the correct answer in the required format, which is essential for exact-match accuracy."
+    }
+  ]
+}

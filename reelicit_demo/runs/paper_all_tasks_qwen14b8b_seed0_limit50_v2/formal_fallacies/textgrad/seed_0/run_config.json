@@ -1,0 +1,11 @@
+{
+  "task": "formal_fallacies",
+  "seed": 0,
+  "method": "textgrad",
+  "limit": 50,
+  "q": 5,
+  "T": 6,
+  "K": 5,
+  "M": 10,
+  "include_format_in_context": true
+}

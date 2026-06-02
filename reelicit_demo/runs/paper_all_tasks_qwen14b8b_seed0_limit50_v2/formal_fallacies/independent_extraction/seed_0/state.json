@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.64,
+  "best_prompt": "Evaluate the logical structure of the argument. Determine if the conclusion necessarily follows from the premises using formal logic principles. An argument is valid only if the conclusion must be true whenever the premises are true. Respond with only the word 'valid' or 'invalid'.",
+  "features": [
+    {
+      "name": "strict_necessity_language",
+      "description": "Measures whether the prompt explicitly emphasizes that the conclusion must be true whenever the premises are true, using strict language like 'must be true' or 'necessary consequence'. 1 indicates the presence of such strict language, 0 indicates absence. This directly influences the AI's precision in evaluating logical necessity, which is crucial for determining deductive validity."
+    },
+    {
+      "name": "formal_logic_emphasis",
+      "description": "Measures whether the prompt explicitly emphasizes the use of formal logic principles (e.g., 'formal logic principles', 'logical inference rules'). 1 indicates the prompt includes such emphasis, 0 indicates it does not. This directly influences the AI's ability to apply formal logic reasoning, which is essential for evaluating deductive validity."
+    },
+    {
+      "name": "explicit_validity_definition",
+      "description": "Measures whether the prompt explicitly defines what makes an argument valid (e.g., 'An argument is valid only if the conclusion must be true whenever the premises are true'). 1 indicates the presence of such a definition, 0 indicates absence. This ensures the AI has a clear understanding of the validity condition, which is critical for accurate evaluation."
+    }
+  ]
+}

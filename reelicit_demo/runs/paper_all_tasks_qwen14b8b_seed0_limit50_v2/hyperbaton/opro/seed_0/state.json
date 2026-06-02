@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "opro",
+  "best_score": 0.72,
+  "best_prompt": "Follow the standard rules of English adjective order: opinion, size, age, shape, color, origin, material, purpose. Compare the two sentences and choose the one that correctly applies this order. Output only the letter (A or B)."
+}

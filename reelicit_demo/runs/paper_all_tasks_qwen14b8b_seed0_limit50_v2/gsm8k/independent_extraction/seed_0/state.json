@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "You are an AI assistant that solves math problems with precision. For each word problem, you must provide a detailed, step-by-step explanation of your solution process, using only the information given. End your response with the final numerical answer, ensuring it is correct and matches the exact format expected.",
+  "features": [
+    {
+      "name": "formatting_specificity",
+      "description": "Measures whether the prompt specifies the exact formatting for the final answer (e.g., 'in a box as the last line of your response'). 1 indicates the prompt explicitly specifies the format, 0 indicates it does not. This feature causally affects performance because precise formatting instructions reduce ambiguity and ensure the AI's final answer matches the expected format, improving exact-match accuracy."
+    },
+    {
+      "name": "precision_emphasis_clarity",
+      "description": "Measures whether the prompt explicitly emphasizes the importance of using only the given information and avoiding assumptions. 1 indicates the prompt includes such emphasis, 0 indicates it does not. This feature causally affects performance because clear emphasis on precision ensures the AI avoids errors from incorporating external knowledge or assumptions, which is critical for exact-match accuracy."
+    }
+  ]
+}

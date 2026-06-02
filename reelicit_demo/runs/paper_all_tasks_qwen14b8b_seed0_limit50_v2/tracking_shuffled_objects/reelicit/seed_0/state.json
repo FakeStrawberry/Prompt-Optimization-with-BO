@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "Be concise and logical. Analyze the sequence of swaps and keep a running tally of object ownership. Once all exchanges are processed, match the final positions of the objects to the correct answer choice. Output only the letter corresponding to your answer, like (D).",
+  "features": [
+    {
+      "name": "final_step_clarity",
+      "description": "Measures whether the prompt explicitly clarifies the final step as 'matching the final positions of the objects to the correct answer choice' or 'determining the final owner of each object.' 1 indicates presence of this clarity, 0 indicates absence. This feature causally affects performance because it ensures the AI understands the ultimate goal of the task, reducing ambiguity in the final selection step."
+    },
+    {
+      "name": "structured_methodology_encouragement",
+      "description": "Measures whether the prompt explicitly encourages the AI to use a structured approach (e.g., 'list each person and the objects they possess after every exchange'). 1 indicates presence of such encouragement, 0 indicates absence. This feature causally affects performance because it promotes a systematic and organized tracking process, which improves accuracy in complex sequences."
+    },
+    {
+      "name": "tally_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to 'keep a running tally' or 'maintain a record' of object ownership during exchanges, and whether this instruction is paired with a clear methodology (e.g., listing each person and their objects after every exchange). 1 indicates presence of both a tally instruction and a clear methodology, 0 indicates absence of this pairing. This feature causally affects performance because it ensures the AI systematically tracks ownership changes while following a structured approach, reducing errors in final object assignment."
+    }
+  ]
+}

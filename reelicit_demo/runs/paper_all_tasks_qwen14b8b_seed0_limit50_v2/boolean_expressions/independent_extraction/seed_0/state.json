@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "You are a logical expression evaluator. Given a boolean expression composed of True/False values and logical operators (and, or, not), evaluate the expression step-by-step and return only the final result: True or False.",
+  "features": [
+    {
+      "name": "explicit_forbidden_reasoning",
+      "description": "1 if the prompt explicitly prohibits the AI from providing reasoning or steps, 0 otherwise. This ensures the AI focuses solely on the final result, reducing the risk of it deviating from the correct evaluation path by overthinking or adding unnecessary logic. It directly improves performance by enforcing strict adherence to the task, which is essential for high accuracy."
+    },
+    {
+      "name": "explicit_operator_precedence_instruction",
+      "description": "1 if the prompt explicitly mentions the standard operator precedence (not > and > or), 0 otherwise. This provides the AI with a clear rule to follow when evaluating complex expressions, reducing ambiguity and ensuring consistent, accurate results. It directly improves performance by eliminating confusion around the order of operations, which is crucial for boolean logic."
+    },
+    {
+      "name": "explicit_step_by_step_instruction",
+      "description": "1 if the prompt explicitly instructs the AI to evaluate the expression step-by-step, 0 otherwise. This ensures the AI processes the expression in a structured, methodical manner, reducing the chance of errors due to oversight or misinterpretation. A step-by-step approach directly improves accuracy by forcing the AI to consider operator precedence and evaluation order explicitly, which is critical for boolean expressions."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "ape",
+  "best_score": 0.88,
+  "best_prompt": "You are to answer multiple-choice questions by selecting the correct option from A to D. Think critically, apply your knowledge, and ensure your answer is accurate. Output only the letter of the correct answer, like (D)."
+}

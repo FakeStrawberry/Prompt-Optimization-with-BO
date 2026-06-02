@@ -1,0 +1,32 @@
+Fri May 29 11:26:34 AM AWST 2026
+ROOT=runs/paper_available_tasks_qwen14b8b_seed0_limit50
+TASKS=gsm8k snarks
+METHODS=reelicit ape opro promptbreeder textgrad no_refinement no_bo static_features independent_extraction
+SEEDS=0
+LIMIT=50
+CUDA_VISIBLE_DEVICES=1,2
+REELICIT_GSM8K_TEST_ARROW=/nas1/wrj/decoding-prob/hf_cache/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866/gsm8k-test.arrow
+0, NVIDIA GeForce RTX 4090, 49140, 10779, 0
+1, NVIDIA GeForce RTX 4090, 49140, 8320, 0
+2, NVIDIA GeForce RTX 4090, 49140, 8869, 0
+3, NVIDIA GeForce RTX 4090, 49140, 38270, 0
+4, NVIDIA GeForce RTX 4090, 49140, 38771, 100
+5, NVIDIA GeForce RTX 4090, 49140, 39322, 100
+6, NVIDIA GeForce RTX 4090, 49140, 9447, 0
+7, NVIDIA GeForce RTX 4090, 49140, 38250, 100
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights:   0%|          | 1/443 [00:00<03:36,  2.04it/s]Loading weights:   2%|▏         | 10/443 [00:00<00:19, 21.82it/s]Loading weights:   4%|▍         | 17/443 [00:00<00:12, 33.37it/s]Loading weights:   6%|▋         | 28/443 [00:00<00:08, 51.55it/s]Loading weights:   9%|▉         | 39/443 [00:00<00:06, 65.11it/s]Loading weights:  11%|█▏        | 50/443 [00:01<00:05, 74.25it/s]Loading weights:  14%|█▍        | 61/443 [00:01<00:04, 80.59it/s]Loading weights:  16%|█▋        | 72/443 [00:01<00:04, 84.53it/s]Loading weights:  19%|█▊        | 83/443 [00:01<00:04, 88.46it/s]Loading weights:  21%|██        | 94/443 [00:01<00:03, 92.68it/s]Loading weights:  24%|██▎       | 105/443 [00:01<00:03, 94.98it/s]Loading weights:  26%|██▌       | 116/443 [00:01<00:03, 96.95it/s]Loading weights:  29%|██▊       | 127/443 [00:01<00:03, 97.98it/s]Loading weights:  32%|███▏      | 142/443 [00:01<00:02, 110.70it/s]Loading weights:  35%|███▍      | 154/443 [00:02<00:02, 105.71it/s]Loading weights:  37%|███▋      | 166/443 [00:02<00:02, 108.59it/s]Loading weights:  41%|████      | 180/443 [00:02<00:02, 110.70it/s]Loading weights:  43%|████▎     | 192/443 [00:02<00:02, 108.53it/s]Loading weights:  46%|████▌     | 204/443 [00:02<00:02, 104.82it/s]Loading weights:  49%|████▉     | 218/443 [00:02<00:01, 113.55it/s]Loading weights:  52%|█████▏    | 230/443 [00:02<00:01, 109.42it/s]Loading weights:  55%|█████▍    | 242/443 [00:02<00:01, 108.24it/s]Loading weights:  57%|█████▋    | 254/443 [00:02<00:01, 108.94it/s]Loading weights:  60%|█████▉    | 265/443 [00:03<00:01, 100.39it/s]Loading weights:  62%|██████▏   | 276/443 [00:03<00:01, 96.53it/s] Loading weights:  65%|██████▍   | 286/443 [00:03<00:01, 93.59it/s]Loading weights:  67%|██████▋   | 296/443 [00:03<00:01, 91.27it/s]Loading weights:  69%|██████▉   | 306/443 [00:03<00:01, 90.13it/s]Loading weights:  71%|███████▏  | 316/443 [00:03<00:01, 91.83it/s]Loading weights:  74%|███████▎  | 326/443 [00:03<00:01, 90.51it/s]Loading weights:  76%|███████▌  | 336/443 [00:03<00:01, 89.99it/s]Loading weights:  78%|███████▊  | 347/443 [00:03<00:01, 93.99it/s]Loading weights:  81%|████████  | 358/443 [00:04<00:00, 96.38it/s]Loading weights:  83%|████████▎ | 369/443 [00:04<00:00, 98.98it/s]Loading weights:  86%|████████▌ | 380/443 [00:04<00:00, 96.83it/s]Loading weights:  88%|████████▊ | 391/443 [00:04<00:00, 97.69it/s]Loading weights:  91%|█████████ | 402/443 [00:04<00:00, 97.09it/s]Loading weights:  93%|█████████▎| 413/443 [00:04<00:00, 97.85it/s]Loading weights:  96%|█████████▌| 424/443 [00:04<00:00, 97.23it/s]Loading weights:  98%|█████████▊| 435/443 [00:04<00:00, 98.95it/s]Loading weights: 100%|██████████| 443/443 [00:04<00:00, 90.42it/s]
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:12,  5.45it/s]Loading weights:   1%|          | 2/399 [00:00<01:15,  5.24it/s]Loading weights:   4%|▍         | 17/399 [00:00<00:08, 47.23it/s]Loading weights:  10%|▉         | 38/399 [00:00<00:03, 93.70it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:02, 122.30it/s]Loading weights:  19%|█▉        | 76/399 [00:00<00:02, 134.73it/s]Loading weights:  23%|██▎       | 93/399 [00:00<00:02, 143.95it/s]Loading weights:  29%|██▊       | 114/399 [00:01<00:01, 157.90it/s]Loading weights:  33%|███▎      | 131/399 [00:01<00:01, 154.87it/s]Loading weights:  37%|███▋      | 147/399 [00:01<00:01, 151.99it/s]Loading weights:  41%|████      | 163/399 [00:01<00:01, 141.35it/s]Loading weights:  45%|████▍     | 178/399 [00:01<00:01, 142.98it/s]Loading weights:  48%|████▊     | 193/399 [00:01<00:01, 130.05it/s]Loading weights:  53%|█████▎    | 212/399 [00:01<00:01, 145.73it/s]Loading weights:  57%|█████▋    | 228/399 [00:01<00:01, 133.39it/s]Loading weights:  62%|██████▏   | 246/399 [00:01<00:01, 138.44it/s]Loading weights:  65%|██████▌   | 261/399 [00:02<00:01, 132.39it/s]Loading weights:  70%|██████▉   | 279/399 [00:02<00:00, 137.15it/s]Loading weights:  73%|███████▎  | 293/399 [00:02<00:00, 129.30it/s]Loading weights:  77%|███████▋  | 307/399 [00:02<00:00, 131.02it/s]Loading weights:  81%|████████  | 323/399 [00:02<00:00, 137.23it/s]Loading weights:  84%|████████▍ | 337/399 [00:02<00:00, 126.74it/s]Loading weights:  89%|████████▉ | 356/399 [00:02<00:00, 136.54it/s]Loading weights:  93%|█████████▎| 370/399 [00:02<00:00, 129.02it/s]Loading weights:  97%|█████████▋| 389/399 [00:03<00:00, 141.76it/s]Loading weights: 100%|██████████| 399/399 [00:03<00:00, 127.73it/s]
+=== task=gsm8k seed=0 method=reelicit ===
+[eval] 25/50 correct=22 acc=0.8800 elapsed=160.3s
+[eval] 50/50 correct=44 acc=0.8800 elapsed=322.0s
+[D0] prompt 1/5: score=0.8800
+[eval] 25/50 correct=23 acc=0.9200 elapsed=160.5s
+[eval] 50/50 correct=46 acc=0.9200 elapsed=317.5s
+[D0] prompt 2/5: score=0.9200
+[eval] 25/50 correct=20 acc=0.8000 elapsed=223.2s
+[eval] 50/50 correct=43 acc=0.8600 elapsed=439.8s
+[D0] prompt 3/5: score=0.8600
+[eval] 25/50 correct=23 acc=0.9200 elapsed=178.4s
+[eval] 50/50 correct=45 acc=0.9000 elapsed=364.1s
+[D0] prompt 4/5: score=0.9000
+[eval] 25/50 correct=21 acc=0.8400 elapsed=161.5s

@@ -1,0 +1,23 @@
+{
+  "iteration": 5,
+  "best_score": 0.7,
+  "best_prompt": "Analyze the scenario and evaluate whether the specified factor is a necessary cause of the outcome. Use counterfactual reasoning: if the factor had not been present, would the outcome still have occurred? Respond with 'Yes' if the factor was a necessary cause, otherwise 'No'.",
+  "features": [
+    {
+      "name": "necessary_cause_clarity",
+      "description": "1 if the prompt explicitly defines 'necessary cause' as the criterion for answering 'Yes', 0 otherwise. Clear definition of 'necessary cause' ensures the model focuses on whether the factor was essential for the outcome, which directly improves accuracy by reducing ambiguity in reasoning."
+    },
+    {
+      "name": "counterfactual_instruction_strength",
+      "description": "1 if the prompt explicitly instructs the model to consider the scenario without the factor and explicitly asks whether the outcome would still have occurred, 0 otherwise. Stronger counterfactual instructions force the model to engage in deeper causal reasoning, which directly improves performance on this task."
+    },
+    {
+      "name": "direct_causation_language",
+      "description": "1 if the prompt uses language that explicitly emphasizes 'direct causation' (e.g., 'directly caused the outcome'), 0 otherwise. Language emphasizing direct causation can mislead the model into focusing on correlation rather than necessary causation, which may reduce accuracy on this task."
+    },
+    {
+      "name": "outcome_clarity",
+      "description": "1 if the prompt explicitly asks the model to evaluate whether the factor was necessary for the outcome to occur, 0 otherwise. This ensures the model is focused on the specific task of determining necessity, which directly improves accuracy by aligning the model's reasoning with the task's requirements."
+    }
+  ]
+}

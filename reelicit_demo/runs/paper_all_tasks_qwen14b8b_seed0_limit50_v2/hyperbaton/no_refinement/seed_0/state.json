@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.68,
+  "best_prompt": "Your task is to determine which sentence has the more natural and grammatically correct adjective order. Remember that in English, adjectives typically follow a specific sequence: opinion, size, age, shape, color, origin, material, purpose. Compare the two sentences and select the one that follows this pattern. Answer with just the letter (A or B).",
+  "features": [
+    {
+      "name": "rule_concreteness",
+      "description": "Measures whether the adjective order rule is explicitly listed in full (e.g., 'opinion, size, age, shape, color, origin, material, purpose') in the prompt. 1 indicates the full sequence is provided, 0 indicates it is omitted or only partially mentioned. This feature causally affects performance because providing the full sequence gives the AI a concrete reference to compare against, reducing ambiguity and increasing accuracy."
+    },
+    {
+      "name": "explicit_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to compare the sentences against the adjective order rule. 1 indicates the instruction is clear and direct (e.g., 'select the one that follows this pattern'), 0 indicates the instruction is vague or absent. This feature causally affects performance because clear instructions ensure the AI understands the exact task, reducing confusion and improving accuracy."
+    }
+  ]
+}

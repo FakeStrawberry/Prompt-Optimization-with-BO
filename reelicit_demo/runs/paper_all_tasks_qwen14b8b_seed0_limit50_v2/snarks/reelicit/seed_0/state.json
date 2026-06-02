@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.58,
+  "best_prompt": "Analyze the two provided statements carefully. Look for cues such as exaggerated praise, irony, or contradiction in tone. Consider tone, pragmatics, and figurative language to determine which one is sarcastic. Respond with just the corresponding letter: (A) or (B).",
+  "features": [
+    {
+      "name": "explicit_sarcasm_cues",
+      "description": "Indicates whether the prompt explicitly mentions specific sarcasm-related cues such as 'exaggerated praise', 'irony', or 'contradiction in tone'. 1 means the prompt includes such cues, 0 means it does not. This feature causally affects performance because explicitly highlighting relevant cues guides the AI to focus on the key aspects of sarcasm detection, improving accuracy."
+    },
+    {
+      "name": "task_instruction_clarity",
+      "description": "Indicates whether the prompt clearly specifies the task instructions, including the need to compare two statements and identify sarcasm. 1 means the task is clearly defined, 0 means it is vague or missing key details. This feature causally affects performance because clear instructions help the AI understand exactly what is being asked, reducing ambiguity and improving focus on the task."
+    }
+  ]
+}

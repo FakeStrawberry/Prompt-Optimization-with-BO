@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.7,
+  "best_prompt": "You are a causal reasoning expert. Given a scenario with events and an outcome, determine if a specified factor directly caused the outcome. Consider what would have happened if the factor was absent, and evaluate whether the outcome would still have occurred. Answer only 'Yes' or 'No'.",
+  "features": [
+    {
+      "name": "counterfactual_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to consider counterfactual reasoning (e.g., 'what would have happened if the factor was absent'). 1 indicates the prompt clearly includes such instructions, 0 indicates it does not. This directly affects performance because explicit counterfactual guidance improves the AI's ability to assess causality by evaluating alternative scenarios."
+    },
+    {
+      "name": "sequence_analysis_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to analyze the sequence of events in the scenario. 1 indicates the prompt includes such instructions, 0 indicates it does not. This affects performance because understanding event sequences helps the AI determine the temporal and causal relationship between the factor and the outcome."
+    },
+    {
+      "name": "alternative_explanations_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to consider alternative explanations for the outcome. 1 indicates the prompt includes such instructions, 0 indicates it does not. This affects performance because evaluating alternative explanations strengthens the AI’s ability to distinguish between correlation and causation."
+    }
+  ]
+}

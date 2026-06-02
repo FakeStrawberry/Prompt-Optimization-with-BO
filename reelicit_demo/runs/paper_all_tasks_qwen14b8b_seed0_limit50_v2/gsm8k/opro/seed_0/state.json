@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "opro",
+  "best_score": 0.92,
+  "best_prompt": "Your task is to solve the given math word problem using multi-step reasoning. First, parse the problem to understand what is being asked. Then, perform the necessary calculations step by step. Finally, present the correct numerical answer as the last line of your response."
+}

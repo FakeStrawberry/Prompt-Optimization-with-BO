@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "promptbreeder",
+  "best_score": 0.72,
+  "best_prompt": "Determine if the specified factor directly caused the outcome by applying counterfactual reasoning. Follow these steps:\n\n1. Identify the factor and the outcome described in the scenario.\n2. Ask: Would the outcome still have occurred if the factor had not been present? Consider this counterfactual scenario.\n3. Check if the factor occurred before the outcome.\n4. Evaluate if there is a plausible mechanism or explanation that connects the factor to the outcome.\n5. Consider if there are alternative explanations for the outcome that do not involve the factor.\n6. Based on this analysis, decide whether the factor was a direct cause of the outcome.\n\nAnswer 'Yes' if the factor was a direct cause, otherwise answer 'No'."
+}

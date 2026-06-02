@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.68,
+  "best_prompt": "You are to perform causal analysis on a scenario. Your task is to determine if the given factor is the cause of the outcome described. Use logical reasoning and consider counterfactuals. Your answer must be either 'Yes' or 'No', with no extra explanation.",
+  "features": [
+    {
+      "name": "explicit_counterfactual_instruction",
+      "description": "Indicates whether the prompt explicitly instructs the AI to consider counterfactuals (e.g., 'what would have happened if the factor were absent?') (1) or not (0). This directly engages the AI in counterfactual thinking, which is essential for accurate causal reasoning. It is more specific than the general 'explicit_counterfactual_prompting' feature, as it focuses on the presence of explicit instruction rather than just the mention of counterfactuals."
+    },
+    {
+      "name": "structured_causal_guidance",
+      "description": "Indicates whether the prompt provides a structured, step-by-step approach to causal reasoning (1) or not (0). A structured approach guides the AI through logical steps (e.g., identifying the outcome, considering counterfactuals) and directly enhances its ability to engage in systematic causal analysis, which is crucial for this task."
+    },
+    {
+      "name": "explicit_answer_format_instruction",
+      "description": "Indicates whether the prompt explicitly instructs the AI to answer only 'Yes' or 'No' with no extra explanation (1) or not (0). This ensures the AI focuses on the task without being distracted by generating unnecessary text, which can improve accuracy by reducing ambiguity in the response."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.9,
+  "best_prompt": "You are to answer multiple-choice questions by selecting the correct option (A-D) based on your knowledge. Think through each question carefully and provide only the correct letter as your response.",
+  "features": [
+    {
+      "name": "explicit_answer_format",
+      "description": "Measures whether the prompt explicitly instructs the AI to respond with only the correct letter (A-D) in a clear and unambiguous manner (1) versus using vague or incomplete instructions (0). This directly influences the AI's ability to focus on selecting the correct answer without unnecessary elaboration, thereby improving accuracy."
+    },
+    {
+      "name": "knowledge_scope_mention",
+      "description": "Measures whether the prompt explicitly mentions the AI's knowledge scope across academic disciplines (e.g., STEM, humanities) (1) versus omitting this detail (0). This provides the AI with a clear directive on the breadth of knowledge to apply, which causally improves its ability to select the correct answer from a wide range of disciplines."
+    },
+    {
+      "name": "response_constraint_clarity",
+      "description": "Measures whether the prompt explicitly prohibits the AI from providing any explanation or reasoning and strictly enforces a single-letter response (1) versus allowing or implying additional output (0). This ensures the AI focuses solely on selecting the correct answer, reducing the risk of errors introduced by verbose or off-task responses."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.64,
+  "best_prompt": "You are a coreference resolution expert. You are tasked with determining which entity an ambiguous pronoun refers to in a given sentence. Consider grammatical agreement, contextual clues, and discourse coherence in your analysis. Choose the most likely referent and answer with only the letter corresponding to your choice, such as (A).",
+  "features": [
+    {
+      "name": "explicit_analysis_instructions",
+      "description": "Measures whether the prompt explicitly instructs the model to analyze grammatical agreement, contextual clues, and discourse coherence when resolving coreference. 1 indicates the prompt includes such explicit analysis instructions, 0 indicates it does not. This feature causally affects performance because providing clear analytical steps ensures the model engages in systematic reasoning, which is critical for resolving ambiguous pronouns accurately."
+    },
+    {
+      "name": "role_clarification",
+      "description": "Measures whether the prompt explicitly identifies the model's role as a 'coreference resolution expert' or similar. 1 indicates the role is clearly defined, 0 indicates it is not. This feature causally affects performance because defining the model's role primes it to adopt a focused analytical mindset, improving task-specific accuracy."
+    }
+  ]
+}

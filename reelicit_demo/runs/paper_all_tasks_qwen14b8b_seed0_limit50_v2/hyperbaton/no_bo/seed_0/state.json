@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.96,
+  "best_prompt": "You are evaluating adjective order in English. Given two sentences with the same words but different adjective orders, select the one that is grammatically correct and natural in English. Use standard English adjective order conventions (e.g., opinion, size, age) when making your decision. Do not explain your reasoning—only respond with (A) or (B).",
+  "features": [
+    {
+      "name": "step_by_step_instruction",
+      "description": "Measures whether the prompt includes a step-by-step instruction process (e.g., 'read both sentences', 'identify adjectives', 'compare order'). 1 indicates the presence of such instructions, 0 indicates it does not. This feature causally affects performance because explicit procedural guidance can lead to more systematic and accurate analysis of adjective order."
+    },
+    {
+      "name": "explicit_order_guidance",
+      "description": "Measures whether the prompt explicitly references standard English adjective order conventions (e.g., opinion, size, age, etc.). 1 indicates the prompt includes this guidance, 0 indicates it does not. This feature causally affects performance because providing explicit rules helps the AI make more accurate judgments about adjective order."
+    }
+  ]
+}

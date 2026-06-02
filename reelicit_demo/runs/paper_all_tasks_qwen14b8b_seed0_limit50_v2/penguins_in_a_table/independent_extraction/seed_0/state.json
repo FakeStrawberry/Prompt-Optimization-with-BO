@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.94,
+  "best_prompt": "You are an AI assistant with the ability to reason about structured data. Given a table of penguin attributes and a question with multiple-choice options, you must parse the table and perform logical analysis to select the correct answer. Follow a clear, structured reasoning process: identify relevant data, apply logical deduction, and choose the correct answer.",
+  "features": [
+    {
+      "name": "explicit_data_scope_instruction",
+      "description": "Measures whether the prompt explicitly mentions the specific attributes of the penguin data (name, age, height, weight) in the instruction. 1 indicates the presence of such explicit mention, 0 indicates absence. This feature causally affects performance because explicitly defining the data scope helps the AI focus on the relevant columns and avoid misinterpreting the table structure."
+    },
+    {
+      "name": "reasoning_process_elaboration",
+      "description": "Measures whether the prompt elaborates on the reasoning process (e.g., 'identify relevant data, apply logical deduction') with specific steps or examples. 1 indicates elaboration, 0 indicates a generic or absent description. This feature causally affects performance because detailed reasoning instructions guide the AI through systematic analysis, reducing errors in tabular reasoning."
+    },
+    {
+      "name": "output_format_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to output only the letter of the correct choice (e.g., 'output only the letter of the correct choice') without additional text or explanation. 1 indicates the presence of such an instruction, 0 indicates absence. This feature causally affects performance because it reduces ambiguity in the expected output format, ensuring the AI adheres to the required response structure and avoids unnecessary explanations that may introduce errors."
+    }
+  ]
+}

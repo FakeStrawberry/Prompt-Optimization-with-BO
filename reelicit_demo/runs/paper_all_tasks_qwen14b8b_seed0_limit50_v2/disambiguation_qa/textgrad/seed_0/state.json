@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "textgrad",
+  "best_score": 0.66,
+  "best_prompt": "You are a coreference resolution expert. Given a sentence with an ambiguous pronoun and multiple possible antecedents, analyze the sentence for contextual clues, grammatical agreement, and narrative flow. Apply linguistic rules and prioritize the most salient and linguistically supported referent. Respond with only the letter of your answer, such as (E)."
+}

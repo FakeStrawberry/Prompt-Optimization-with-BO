@@ -1,0 +1,27 @@
+{
+  "iteration": 5,
+  "best_score": 0.9,
+  "best_prompt": "Evaluate the given boolean expression accurately. Follow standard logical operator precedence: 'not' first, then 'and', then 'or'. Do not provide any explanation—only output 'True' or 'False' based on the evaluation of the expression.",
+  "features": [
+    {
+      "name": "explicit_precedence_instruction",
+      "description": "Indicates whether the prompt explicitly mentions the order of logical operator precedence (e.g., 'not' first, then 'and', then 'or'). 1 means the precedence is explicitly stated, 0 means it is not. This directly affects performance because clarity on operator precedence reduces ambiguity and ensures the AI evaluates the expression correctly."
+    },
+    {
+      "name": "strict_output_instruction",
+      "description": "Indicates whether the prompt explicitly requires the AI to output only 'True' or 'False' with no additional text or explanation. 1 means the instruction is strict, 0 means it is not. This feature causally affects performance by reducing the likelihood of the AI providing incorrect or extraneous output, which improves accuracy."
+    },
+    {
+      "name": "repetition_of_output_instruction",
+      "description": "Indicates whether the prompt contains multiple explicit instructions requiring only 'True' or 'False' as the output. 1 means the instruction is repeated, 0 means it is not. Repetition of the output instruction reinforces the strictness of the requirement, which may improve performance by reducing the chance of the AI misunderstanding or ignoring the instruction."
+    },
+    {
+      "name": "presence_of_evaluation_steps_instruction",
+      "description": "Indicates whether the prompt includes an instruction to evaluate the expression step by step or break it down into components. 1 means the instruction is present, 0 means it is not. This feature causally affects performance by encouraging the AI to process the expression methodically, which can reduce errors caused by skipping steps or misapplying logic."
+    },
+    {
+      "name": "explicit_order_of_operations_instruction",
+      "description": "Indicates whether the prompt explicitly mentions the order of operations (e.g., 'not' first, then 'and', then 'or') in the context of evaluating the expression. 1 means the instruction is present, 0 means it is not. This feature causally affects performance by ensuring the AI follows the correct sequence of operations, which is critical for accurate evaluation of boolean expressions."
+    }
+  ]
+}

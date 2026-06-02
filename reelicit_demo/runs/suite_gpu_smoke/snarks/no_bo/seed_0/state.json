@@ -1,0 +1,15 @@
+{
+  "iteration": 1,
+  "best_score": 0.6,
+  "best_prompt": "Given two very similar statements, your role is to identify which one contains sarcasm. Use your understanding of tone, context, and implied meaning to make this determination. Consider the speaker's intent and the use of figurative language. Respond with only the letter (A) or (B) indicating the sarcastic statement. Avoid adding any extra explanation or analysis.",
+  "features": [
+    {
+      "name": "explicit_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to focus on tone, intent, and figurative language to detect sarcasm. 1 indicates the prompt clearly specifies these elements, 0 indicates it does not. Clear instructions improve performance by directly guiding the AI to focus on the causal factors that distinguish sarcasm (tone, intent, figurative language)."
+    },
+    {
+      "name": "response_format_restrictiveness",
+      "description": "Measures whether the prompt explicitly restricts the AI's response to only the letter (A) or (B) without additional explanation. 1 indicates strict format restriction, 0 indicates no such restriction. Strict format requirements improve performance by reducing cognitive load and ensuring the AI focuses on the task rather than generating unnecessary text."
+    }
+  ]
+}

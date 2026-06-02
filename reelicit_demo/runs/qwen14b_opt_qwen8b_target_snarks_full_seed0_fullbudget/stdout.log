@@ -1,0 +1,340 @@
+Started at Fri May 29 12:04:55 AM AWST 2026
+Output dir: runs/qwen14b_opt_qwen8b_target_snarks_full_seed0_fullbudget
+Optimizer: /nas1/zyj/models/Qwen3-14B on process cuda:1 (physical GPU 2)
+Target:    /nas1/zyj/models/Qwen3-8B on process cuda:0 (physical GPU 1)
+Task: snarks full split, seed=0, q=5, T=6, K=5, M=10, N=30
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights:   0%|          | 1/443 [00:00<01:10,  6.28it/s]Loading weights:   0%|          | 2/443 [00:00<01:21,  5.41it/s]Loading weights:   3%|▎         | 14/443 [00:00<00:11, 38.89it/s]Loading weights:   6%|▌         | 26/443 [00:00<00:06, 62.84it/s]Loading weights:   9%|▊         | 38/443 [00:00<00:05, 75.66it/s]Loading weights:  11%|█▏        | 50/443 [00:00<00:04, 84.31it/s]Loading weights:  15%|█▍        | 65/443 [00:00<00:03, 101.78it/s]Loading weights:  18%|█▊        | 78/443 [00:01<00:03, 109.58it/s]Loading weights:  21%|██        | 92/443 [00:01<00:03, 111.85it/s]Loading weights:  23%|██▎       | 104/443 [00:01<00:03, 108.14it/s]Loading weights:  26%|██▌       | 116/443 [00:01<00:03, 107.63it/s]Loading weights:  30%|██▉       | 131/443 [00:01<00:02, 118.45it/s]Loading weights:  33%|███▎      | 144/443 [00:01<00:02, 119.86it/s]Loading weights:  36%|███▌      | 158/443 [00:01<00:02, 118.85it/s]Loading weights:  39%|███▊      | 171/443 [00:01<00:02, 108.34it/s]Loading weights:  42%|████▏     | 186/443 [00:01<00:02, 118.40it/s]Loading weights:  45%|████▍     | 199/443 [00:02<00:02, 121.44it/s]Loading weights:  48%|████▊     | 213/443 [00:02<00:02, 112.07it/s]Loading weights:  51%|█████     | 226/443 [00:02<00:01, 111.36it/s]Loading weights:  54%|█████▍    | 241/443 [00:02<00:01, 121.42it/s]Loading weights:  57%|█████▋    | 254/443 [00:02<00:01, 123.12it/s]Loading weights:  60%|██████    | 268/443 [00:02<00:01, 122.12it/s]Loading weights:  63%|██████▎   | 281/443 [00:02<00:01, 111.44it/s]Loading weights:  67%|██████▋   | 296/443 [00:02<00:01, 120.81it/s]Loading weights:  70%|██████▉   | 310/443 [00:02<00:01, 125.54it/s]Loading weights:  73%|███████▎  | 323/443 [00:03<00:00, 120.25it/s]Loading weights:  76%|███████▌  | 336/443 [00:03<00:00, 109.22it/s]Loading weights:  79%|███████▉  | 351/443 [00:03<00:00, 119.02it/s]Loading weights:  82%|████████▏ | 364/443 [00:03<00:00, 121.79it/s]Loading weights:  85%|████████▌ | 377/443 [00:03<00:00, 118.73it/s]Loading weights:  88%|████████▊ | 390/443 [00:03<00:00, 117.14it/s]Loading weights:  91%|█████████ | 402/443 [00:03<00:00, 112.10it/s]Loading weights:  94%|█████████▍| 417/443 [00:03<00:00, 120.69it/s]Loading weights:  97%|█████████▋| 430/443 [00:04<00:00, 122.20it/s]Loading weights: 100%|██████████| 443/443 [00:04<00:00, 107.96it/s]
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:02,  6.39it/s]Loading weights:   1%|          | 2/399 [00:00<01:04,  6.13it/s]Loading weights:   4%|▍         | 17/399 [00:00<00:06, 54.82it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:03, 104.47it/s]Loading weights:  15%|█▌        | 61/399 [00:00<00:02, 135.11it/s]Loading weights:  21%|██        | 83/399 [00:00<00:02, 156.47it/s]Loading weights:  26%|██▋       | 105/399 [00:00<00:01, 172.42it/s]Loading weights:  32%|███▏      | 127/399 [00:00<00:01, 179.52it/s]Loading weights:  37%|███▋      | 149/399 [00:01<00:01, 188.70it/s]Loading weights:  43%|████▎     | 171/399 [00:01<00:01, 196.37it/s]Loading weights:  48%|████▊     | 193/399 [00:01<00:01, 199.88it/s]Loading weights:  54%|█████▍    | 215/399 [00:01<00:00, 203.75it/s]Loading weights:  59%|█████▉    | 236/399 [00:01<00:00, 201.09it/s]Loading weights:  65%|██████▍   | 258/399 [00:01<00:00, 206.44it/s]Loading weights:  70%|███████   | 280/399 [00:01<00:00, 209.08it/s]Loading weights:  76%|███████▌  | 302/399 [00:01<00:00, 208.45it/s]Loading weights:  81%|████████  | 324/399 [00:01<00:00, 204.55it/s]Loading weights:  87%|████████▋ | 346/399 [00:02<00:00, 201.38it/s]Loading weights:  92%|█████████▏| 367/399 [00:02<00:00, 203.27it/s]Loading weights:  97%|█████████▋| 389/399 [00:02<00:00, 193.65it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 174.30it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/lukaemon/bbh/resolve/982bb89fd79532a8ac676a61fc42eb1aeec63f99/bbh.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since lukaemon/bbh couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'snarks' at /nas1/zyj/hf-cache/datasets/lukaemon___bbh/snarks/0.0.0/982bb89fd79532a8ac676a61fc42eb1aeec63f99 (last modified on Thu May 28 21:38:43 2026).
+Task: Snarks
+Paper budget/settings: N=30 q=5 T=6 K=5 M=10 tau=0.100 b=10 nmax=12
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.5s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=2.8s
+[eval] 75/178 correct=42 acc=0.5600 elapsed=4.1s
+[eval] 100/178 correct=58 acc=0.5800 elapsed=5.4s
+[eval] 125/178 correct=72 acc=0.5760 elapsed=6.8s
+[eval] 150/178 correct=88 acc=0.5867 elapsed=8.1s
+[eval] 175/178 correct=103 acc=0.5886 elapsed=9.5s
+[eval] 178/178 correct=106 acc=0.5955 elapsed=9.6s
+[D0] prompt 1/5: score=0.5955
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.8s
+[eval] 50/178 correct=28 acc=0.5600 elapsed=3.7s
+[eval] 75/178 correct=41 acc=0.5467 elapsed=5.5s
+[eval] 100/178 correct=57 acc=0.5700 elapsed=7.4s
+[eval] 125/178 correct=73 acc=0.5840 elapsed=9.3s
+[eval] 150/178 correct=90 acc=0.6000 elapsed=11.1s
+[eval] 175/178 correct=106 acc=0.6057 elapsed=13.0s
+[eval] 178/178 correct=109 acc=0.6124 elapsed=13.2s
+[D0] prompt 2/5: score=0.6124
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=28 acc=0.5600 elapsed=3.8s
+[eval] 75/178 correct=43 acc=0.5733 elapsed=5.7s
+[eval] 100/178 correct=60 acc=0.6000 elapsed=7.5s
+[eval] 125/178 correct=77 acc=0.6160 elapsed=9.4s
+[eval] 150/178 correct=95 acc=0.6333 elapsed=11.3s
+[eval] 175/178 correct=113 acc=0.6457 elapsed=13.2s
+[eval] 178/178 correct=116 acc=0.6517 elapsed=13.4s
+[D0] prompt 3/5: score=0.6517
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.3s
+[eval] 50/178 correct=31 acc=0.6200 elapsed=2.6s
+[eval] 75/178 correct=44 acc=0.5867 elapsed=3.9s
+[eval] 100/178 correct=57 acc=0.5700 elapsed=5.2s
+[eval] 125/178 correct=69 acc=0.5520 elapsed=6.6s
+[eval] 150/178 correct=88 acc=0.5867 elapsed=7.9s
+[eval] 175/178 correct=101 acc=0.5771 elapsed=9.2s
+[eval] 178/178 correct=104 acc=0.5843 elapsed=9.4s
+[D0] prompt 4/5: score=0.5843
+[eval] 25/178 correct=11 acc=0.4400 elapsed=1.6s
+[eval] 50/178 correct=26 acc=0.5200 elapsed=3.0s
+[eval] 75/178 correct=41 acc=0.5467 elapsed=4.5s
+[eval] 100/178 correct=56 acc=0.5600 elapsed=6.0s
+[eval] 125/178 correct=70 acc=0.5600 elapsed=7.6s
+[eval] 150/178 correct=88 acc=0.5867 elapsed=9.1s
+[eval] 175/178 correct=105 acc=0.6000 elapsed=10.7s
+[eval] 178/178 correct=108 acc=0.6067 elapsed=10.9s
+/home/zyj/anaconda3/envs/reelicit/lib/python3.12/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+[D0] prompt 5/5: score=0.6067
+[ReElicit] iteration 1/5: history=5 best=0.6517
+  feature set 1/5: d=1 cv_mse=0.001771
+  feature set 2/5: d=2 cv_mse=0.000491
+  feature set 3/5: d=2 cv_mse=0.004108
+  feature set 4/5: d=2 cv_mse=0.000821
+  feature set 5/5: d=2 cv_mse=0.000821
+  selected feature set 'new-1': d=2 cv_mse=0.000491
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.7s
+[eval] 75/178 correct=39 acc=0.5200 elapsed=5.6s
+[eval] 100/178 correct=55 acc=0.5500 elapsed=7.5s
+[eval] 125/178 correct=70 acc=0.5600 elapsed=9.3s
+[eval] 150/178 correct=87 acc=0.5800 elapsed=11.2s
+[eval] 175/178 correct=104 acc=0.5943 elapsed=13.1s
+[eval] 178/178 correct=107 acc=0.6011 elapsed=13.3s
+  candidate 1/5: score=0.6011
+[eval] 25/178 correct=14 acc=0.5600 elapsed=1.9s
+[eval] 50/178 correct=28 acc=0.5600 elapsed=3.7s
+[eval] 75/178 correct=43 acc=0.5733 elapsed=5.6s
+[eval] 100/178 correct=60 acc=0.6000 elapsed=7.4s
+[eval] 125/178 correct=76 acc=0.6080 elapsed=9.3s
+[eval] 150/178 correct=91 acc=0.6067 elapsed=11.2s
+[eval] 175/178 correct=106 acc=0.6057 elapsed=13.0s
+[eval] 178/178 correct=109 acc=0.6124 elapsed=13.3s
+  candidate 2/5: score=0.6124
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.7s
+[eval] 75/178 correct=39 acc=0.5200 elapsed=5.6s
+[eval] 100/178 correct=54 acc=0.5400 elapsed=7.5s
+[eval] 125/178 correct=71 acc=0.5680 elapsed=9.4s
+[eval] 150/178 correct=89 acc=0.5933 elapsed=11.3s
+[eval] 175/178 correct=107 acc=0.6114 elapsed=13.1s
+[eval] 178/178 correct=110 acc=0.6180 elapsed=13.4s
+  candidate 3/5: score=0.6180
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.7s
+[eval] 75/178 correct=43 acc=0.5733 elapsed=5.5s
+[eval] 100/178 correct=59 acc=0.5900 elapsed=7.4s
+[eval] 125/178 correct=74 acc=0.5920 elapsed=9.3s
+[eval] 150/178 correct=89 acc=0.5933 elapsed=11.1s
+[eval] 175/178 correct=105 acc=0.6000 elapsed=13.0s
+[eval] 178/178 correct=108 acc=0.6067 elapsed=13.2s
+  candidate 4/5: score=0.6067
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.8s
+[eval] 75/178 correct=39 acc=0.5200 elapsed=5.6s
+[eval] 100/178 correct=54 acc=0.5400 elapsed=7.5s
+[eval] 125/178 correct=71 acc=0.5680 elapsed=9.4s
+[eval] 150/178 correct=89 acc=0.5933 elapsed=11.3s
+[eval] 175/178 correct=107 acc=0.6114 elapsed=13.2s
+[eval] 178/178 correct=110 acc=0.6180 elapsed=13.4s
+/home/zyj/anaconda3/envs/reelicit/lib/python3.12/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+  candidate 5/5: score=0.6180
+[ReElicit] iteration 2/5: history=10 best=0.6517
+  feature set 1/5: d=2 cv_mse=0.000389
+  feature set 2/5: d=2 cv_mse=0.000389
+  feature set 3/5: d=2 cv_mse=0.000301
+  feature set 4/5: d=2 cv_mse=0.000328
+  feature set 5/5: d=2 cv_mse=0.000301
+  incumbent feature set: d=2 cv_mse=0.000761
+  selected feature set 'new-2': d=2 cv_mse=0.000301
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.8s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.6s
+[eval] 75/178 correct=39 acc=0.5200 elapsed=5.4s
+[eval] 100/178 correct=54 acc=0.5400 elapsed=7.2s
+[eval] 125/178 correct=68 acc=0.5440 elapsed=9.0s
+[eval] 150/178 correct=84 acc=0.5600 elapsed=10.8s
+[eval] 175/178 correct=97 acc=0.5543 elapsed=12.6s
+[eval] 178/178 correct=100 acc=0.5618 elapsed=12.8s
+  candidate 1/5: score=0.5618
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=28 acc=0.5600 elapsed=3.7s
+[eval] 75/178 correct=40 acc=0.5333 elapsed=5.6s
+[eval] 100/178 correct=55 acc=0.5500 elapsed=7.5s
+[eval] 125/178 correct=72 acc=0.5760 elapsed=9.3s
+[eval] 150/178 correct=90 acc=0.6000 elapsed=11.2s
+[eval] 175/178 correct=108 acc=0.6171 elapsed=13.1s
+[eval] 178/178 correct=111 acc=0.6236 elapsed=13.3s
+  candidate 2/5: score=0.6236
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.7s
+[eval] 75/178 correct=42 acc=0.5600 elapsed=5.6s
+[eval] 100/178 correct=57 acc=0.5700 elapsed=7.5s
+[eval] 125/178 correct=74 acc=0.5920 elapsed=9.3s
+[eval] 150/178 correct=91 acc=0.6067 elapsed=11.2s
+[eval] 175/178 correct=107 acc=0.6114 elapsed=13.1s
+[eval] 178/178 correct=110 acc=0.6180 elapsed=13.3s
+  candidate 3/5: score=0.6180
+[eval] 25/178 correct=12 acc=0.4800 elapsed=1.8s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.7s
+[eval] 75/178 correct=39 acc=0.5200 elapsed=5.5s
+[eval] 100/178 correct=56 acc=0.5600 elapsed=7.4s
+[eval] 125/178 correct=72 acc=0.5760 elapsed=9.3s
+[eval] 150/178 correct=89 acc=0.5933 elapsed=11.1s
+[eval] 175/178 correct=104 acc=0.5943 elapsed=12.9s
+[eval] 178/178 correct=107 acc=0.6011 elapsed=13.1s
+  candidate 4/5: score=0.6011
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=28 acc=0.5600 elapsed=3.7s
+[eval] 75/178 correct=43 acc=0.5733 elapsed=5.6s
+[eval] 100/178 correct=60 acc=0.6000 elapsed=7.5s
+[eval] 125/178 correct=77 acc=0.6160 elapsed=9.3s
+[eval] 150/178 correct=95 acc=0.6333 elapsed=11.2s
+[eval] 175/178 correct=113 acc=0.6457 elapsed=13.1s
+[eval] 178/178 correct=116 acc=0.6517 elapsed=13.3s
+/home/zyj/anaconda3/envs/reelicit/lib/python3.12/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/zyj/anaconda3/envs/reelicit/lib/python3.12/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-07 to the diagonal
+  warnings.warn(
+  candidate 5/5: score=0.6517
+[ReElicit] iteration 3/5: history=15 best=0.6517
+  feature set 1/5: d=3 cv_mse=0.000400
+  feature set 2/5: d=3 cv_mse=0.000858
+  feature set 3/5: d=3 cv_mse=0.002183
+  feature set 4/5: d=2 cv_mse=0.001167
+  feature set 5/5: d=2 cv_mse=0.001429
+  incumbent feature set: d=2 cv_mse=0.000395
+  selected feature set 'incumbent': d=2 cv_mse=0.000395
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.7s
+[eval] 75/178 correct=42 acc=0.5600 elapsed=5.5s
+[eval] 100/178 correct=59 acc=0.5900 elapsed=7.4s
+[eval] 125/178 correct=75 acc=0.6000 elapsed=9.3s
+[eval] 150/178 correct=92 acc=0.6133 elapsed=11.1s
+[eval] 175/178 correct=108 acc=0.6171 elapsed=13.0s
+[eval] 178/178 correct=111 acc=0.6236 elapsed=13.2s
+  candidate 1/5: score=0.6236
+[eval] 25/178 correct=12 acc=0.4800 elapsed=1.8s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.7s
+[eval] 75/178 correct=41 acc=0.5467 elapsed=5.5s
+[eval] 100/178 correct=55 acc=0.5500 elapsed=7.4s
+[eval] 125/178 correct=71 acc=0.5680 elapsed=9.2s
+[eval] 150/178 correct=88 acc=0.5867 elapsed=11.0s
+[eval] 175/178 correct=103 acc=0.5886 elapsed=12.9s
+[eval] 178/178 correct=106 acc=0.5955 elapsed=13.1s
+  candidate 2/5: score=0.5955
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.8s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.6s
+[eval] 75/178 correct=39 acc=0.5200 elapsed=5.4s
+[eval] 100/178 correct=54 acc=0.5400 elapsed=7.2s
+[eval] 125/178 correct=68 acc=0.5440 elapsed=9.0s
+[eval] 150/178 correct=84 acc=0.5600 elapsed=10.8s
+[eval] 175/178 correct=97 acc=0.5543 elapsed=12.6s
+[eval] 178/178 correct=100 acc=0.5618 elapsed=12.8s
+  candidate 3/5: score=0.5618
+[eval] 25/178 correct=14 acc=0.5600 elapsed=1.9s
+[eval] 50/178 correct=31 acc=0.6200 elapsed=3.7s
+[eval] 75/178 correct=45 acc=0.6000 elapsed=5.6s
+[eval] 100/178 correct=60 acc=0.6000 elapsed=7.4s
+[eval] 125/178 correct=75 acc=0.6000 elapsed=9.3s
+[eval] 150/178 correct=93 acc=0.6200 elapsed=11.1s
+[eval] 175/178 correct=108 acc=0.6171 elapsed=13.0s
+[eval] 178/178 correct=111 acc=0.6236 elapsed=13.2s
+  candidate 4/5: score=0.6236
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.7s
+[eval] 75/178 correct=39 acc=0.5200 elapsed=5.5s
+[eval] 100/178 correct=56 acc=0.5600 elapsed=7.4s
+[eval] 125/178 correct=71 acc=0.5680 elapsed=9.2s
+[eval] 150/178 correct=88 acc=0.5867 elapsed=11.1s
+[eval] 175/178 correct=102 acc=0.5829 elapsed=12.9s
+[eval] 178/178 correct=105 acc=0.5899 elapsed=13.2s
+/home/zyj/anaconda3/envs/reelicit/lib/python3.12/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+  candidate 5/5: score=0.5899
+[ReElicit] iteration 4/5: history=20 best=0.6517
+  feature set 1/5: d=2 cv_mse=0.005248
+  feature set 2/5: d=2 cv_mse=0.000701
+  feature set 3/5: d=2 cv_mse=0.000748
+  feature set 4/5: d=3 cv_mse=0.001078
+  feature set 5/5: d=2 cv_mse=0.000740
+  incumbent feature set: d=2 cv_mse=0.000244
+  selected feature set 'incumbent': d=2 cv_mse=0.000244
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.7s
+[eval] 75/178 correct=42 acc=0.5600 elapsed=5.6s
+[eval] 100/178 correct=59 acc=0.5900 elapsed=7.4s
+[eval] 125/178 correct=75 acc=0.6000 elapsed=9.3s
+[eval] 150/178 correct=92 acc=0.6133 elapsed=11.2s
+[eval] 175/178 correct=108 acc=0.6171 elapsed=13.0s
+[eval] 178/178 correct=111 acc=0.6236 elapsed=13.3s
+  candidate 1/5: score=0.6236
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.7s
+[eval] 75/178 correct=42 acc=0.5600 elapsed=5.6s
+[eval] 100/178 correct=57 acc=0.5700 elapsed=7.5s
+[eval] 125/178 correct=74 acc=0.5920 elapsed=9.4s
+[eval] 150/178 correct=91 acc=0.6067 elapsed=11.3s
+[eval] 175/178 correct=107 acc=0.6114 elapsed=13.1s
+[eval] 178/178 correct=110 acc=0.6180 elapsed=13.4s
+  candidate 2/5: score=0.6180
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.7s
+[eval] 75/178 correct=41 acc=0.5467 elapsed=5.6s
+[eval] 100/178 correct=56 acc=0.5600 elapsed=7.4s
+[eval] 125/178 correct=72 acc=0.5760 elapsed=9.3s
+[eval] 150/178 correct=88 acc=0.5867 elapsed=11.1s
+[eval] 175/178 correct=102 acc=0.5829 elapsed=13.0s
+[eval] 178/178 correct=105 acc=0.5899 elapsed=13.2s
+  candidate 3/5: score=0.5899
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.7s
+[eval] 75/178 correct=40 acc=0.5333 elapsed=5.6s
+[eval] 100/178 correct=55 acc=0.5500 elapsed=7.5s
+[eval] 125/178 correct=72 acc=0.5760 elapsed=9.4s
+[eval] 150/178 correct=89 acc=0.5933 elapsed=11.3s
+[eval] 175/178 correct=106 acc=0.6057 elapsed=13.1s
+[eval] 178/178 correct=109 acc=0.6124 elapsed=13.4s
+  candidate 4/5: score=0.6124
+[eval] 25/178 correct=12 acc=0.4800 elapsed=1.9s
+[eval] 50/178 correct=26 acc=0.5200 elapsed=3.7s
+[eval] 75/178 correct=38 acc=0.5067 elapsed=5.5s
+[eval] 100/178 correct=53 acc=0.5300 elapsed=7.3s
+[eval] 125/178 correct=67 acc=0.5360 elapsed=9.1s
+[eval] 150/178 correct=84 acc=0.5600 elapsed=11.0s
+[eval] 175/178 correct=98 acc=0.5600 elapsed=12.8s
+[eval] 178/178 correct=101 acc=0.5674 elapsed=13.0s
+/home/zyj/anaconda3/envs/reelicit/lib/python3.12/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+  candidate 5/5: score=0.5674
+[ReElicit] iteration 5/5: history=25 best=0.6517
+  feature set 1/5: d=2 cv_mse=0.000906
+  feature set 2/5: d=2 cv_mse=0.000468
+  feature set 3/5: d=2 cv_mse=0.000500
+  feature set 4/5: d=2 cv_mse=0.000278
+  feature set 5/5: d=2 cv_mse=0.000463
+  incumbent feature set: d=2 cv_mse=0.000708
+  selected feature set 'new-3': d=2 cv_mse=0.000278
+[eval] 25/178 correct=11 acc=0.4400 elapsed=1.9s
+[eval] 50/178 correct=28 acc=0.5600 elapsed=3.7s
+[eval] 75/178 correct=41 acc=0.5467 elapsed=5.7s
+[eval] 100/178 correct=56 acc=0.5600 elapsed=8.0s
+[eval] 125/178 correct=72 acc=0.5760 elapsed=9.9s
+[eval] 150/178 correct=90 acc=0.6000 elapsed=11.8s
+[eval] 175/178 correct=103 acc=0.5886 elapsed=13.6s
+[eval] 178/178 correct=106 acc=0.5955 elapsed=13.9s
+  candidate 1/5: score=0.5955
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.7s
+[eval] 75/178 correct=42 acc=0.5600 elapsed=5.6s
+[eval] 100/178 correct=59 acc=0.5900 elapsed=7.4s
+[eval] 125/178 correct=75 acc=0.6000 elapsed=9.3s
+[eval] 150/178 correct=92 acc=0.6133 elapsed=11.2s
+[eval] 175/178 correct=108 acc=0.6171 elapsed=13.1s
+[eval] 178/178 correct=111 acc=0.6236 elapsed=13.3s
+  candidate 2/5: score=0.6236
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=30 acc=0.6000 elapsed=3.8s
+[eval] 75/178 correct=43 acc=0.5733 elapsed=5.6s
+[eval] 100/178 correct=58 acc=0.5800 elapsed=7.5s
+[eval] 125/178 correct=74 acc=0.5920 elapsed=9.4s
+[eval] 150/178 correct=91 acc=0.6067 elapsed=11.3s
+[eval] 175/178 correct=105 acc=0.6000 elapsed=13.1s
+[eval] 178/178 correct=108 acc=0.6067 elapsed=13.4s
+  candidate 3/5: score=0.6067
+[eval] 25/178 correct=13 acc=0.5200 elapsed=1.9s
+[eval] 50/178 correct=27 acc=0.5400 elapsed=3.8s
+[eval] 75/178 correct=40 acc=0.5333 elapsed=5.6s
+[eval] 100/178 correct=55 acc=0.5500 elapsed=7.5s
+[eval] 125/178 correct=72 acc=0.5760 elapsed=9.4s
+[eval] 150/178 correct=89 acc=0.5933 elapsed=11.3s
+[eval] 175/178 correct=106 acc=0.6057 elapsed=13.2s
+[eval] 178/178 correct=109 acc=0.6124 elapsed=13.4s
+  candidate 4/5: score=0.6124
+[eval] 25/178 correct=12 acc=0.4800 elapsed=1.9s
+[eval] 50/178 correct=29 acc=0.5800 elapsed=3.8s
+[eval] 75/178 correct=41 acc=0.5467 elapsed=5.7s
+[eval] 100/178 correct=56 acc=0.5600 elapsed=7.6s
+[eval] 125/178 correct=71 acc=0.5680 elapsed=9.5s
+[eval] 150/178 correct=90 acc=0.6000 elapsed=11.4s
+[eval] 175/178 correct=103 acc=0.5886 elapsed=13.3s
+[eval] 178/178 correct=106 acc=0.5955 elapsed=13.6s
+  candidate 5/5: score=0.5955
+
+Best score: 0.651685
+Best prompt:
+Your task is to compare two nearly identical statements and determine which one contains sarcasm. Consider the use of irony, exaggerated language, and the speaker's intent. Your response should be a single letter: (A) or (B), indicating the sarcastic statement.
+Artifacts written to: /nas1/zyj/Prompt/reelicit_demo/runs/qwen14b_opt_qwen8b_target_snarks_full_seed0_fullbudget
+Finished at Fri May 29 12:39:21 AM AWST 2026

@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "You are a math problem solver. When given a grade-school math word problem, break it down into clear, logical steps. Analyze the problem, identify the operations needed, and solve step by step. Conclude with the final numerical answer enclosed in a box.",
+  "features": [
+    {
+      "name": "explicit_final_answer_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to conclude with the final numerical answer enclosed in a box. 1 indicates the presence of this instruction, 0 indicates its absence. This directly affects performance because it ensures the AI adheres to the required output format, improving exact-match accuracy."
+    },
+    {
+      "name": "structured_reasoning_requirement",
+      "description": "Measures whether the prompt explicitly requires the AI to use structured reasoning or break the problem into logical steps. 1 indicates the presence of this requirement, 0 indicates its absence. This improves performance by guiding the AI to follow a systematic approach, which is critical for multi-step arithmetic problems."
+    }
+  ]
+}

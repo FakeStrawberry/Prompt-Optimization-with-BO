@@ -1,0 +1,15 @@
+{
+  "iteration": 1,
+  "best_score": 0.5168343477865226,
+  "best_prompt": "Analyze the following two statements and identify which one is sarcastic. Sarcasm often involves irony, understatement, or exaggerated praise with a negative connotation. Look for cues such as tone, context, and contrast between literal and intended meaning. Output only the number (1 or 2) of the sarcastic statement, followed by a brief justification for your choice.",
+  "features": [
+    {
+      "name": "clarity_of_instruction",
+      "description": "Measures how clearly the prompt instructs the AI to identify sarcasm. 1 indicates the prompt explicitly asks for the output format (e.g., 'Output only the number 1 or 2'), while 0 indicates the prompt is more vague or requires inferencing about the output format. This directly affects performance because clear instructions reduce ambiguity and guide the AI toward the correct response format."
+    },
+    {
+      "name": "specificity_of_sarcasm_definition",
+      "description": "Measures how specific the prompt is in defining sarcasm. 1 indicates the prompt includes concrete examples or definitions (e.g., 'irony, understatement, or exaggerated praise with a negative connotation'), while 0 indicates the prompt uses more abstract or general terms. This directly affects performance because a specific definition helps the AI better recognize sarcasm cues."
+    }
+  ]
+}

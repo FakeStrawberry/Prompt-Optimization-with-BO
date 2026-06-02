@@ -1,0 +1,23 @@
+{
+  "iteration": 5,
+  "best_score": 0.74,
+  "best_prompt": "Follow a step-by-step approach: first, understand the question, then locate the relevant data in the table, next perform any necessary calculations or comparisons, and finally select the correct answer from the multiple-choice options. Output only the letter corresponding to the correct choice.",
+  "features": [
+    {
+      "name": "explicit_step_order",
+      "description": "Measures whether the prompt explicitly lists the steps in a specific order (e.g., 'first, understand the question, then locate the data...'). A value of 1 indicates the steps are clearly ordered, which helps the AI systematically process the table and avoid confusion. A value of 0 means the steps are either missing or not ordered, which may lead to less structured reasoning and lower accuracy."
+    },
+    {
+      "name": "task_specific_guidance",
+      "description": "Measures whether the prompt includes explicit task-specific guidance about parsing the table (e.g., 'parse the table', 'locate the relevant data', 'reason through the attributes'). A value of 1 indicates the presence of such guidance, which helps the AI focus on the required operations (e.g., parsing, comparing, selecting). A value of 0 means such guidance is absent, potentially leading to less precise reasoning about the table structure."
+    },
+    {
+      "name": "redundant_instructions",
+      "description": "Measures whether the prompt contains redundant or repetitive instructions (e.g., multiple mentions of 'select the correct answer' or 'output only the letter'). A value of 1 indicates redundancy, which may confuse the AI or reduce focus on the task. A value of 0 means instructions are concise and non-redundant, promoting clarity and better task performance."
+    },
+    {
+      "name": "explicit_output_format",
+      "description": "Measures whether the prompt explicitly specifies the output format (e.g., 'output only the letter corresponding to the correct choice'). A value of 1 indicates the format is clearly defined, which helps the AI avoid unnecessary text and focus on the correct response. A value of 0 means the format is either missing or vague, potentially leading to incorrect or verbose outputs."
+    }
+  ]
+}

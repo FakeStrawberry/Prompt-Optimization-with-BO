@@ -1,0 +1,15 @@
+{
+  "iteration": 1,
+  "best_score": 0.8,
+  "best_prompt": "Analyze the following two statements and identify which one is sarcastic. Sarcasm often involves a contrast between the literal meaning and the intended meaning, often with a tone of mockery or irony. Use your understanding of pragmatics and context to determine which statement is not meant to be taken literally. Output only the number of the sarcastic statement (1 or 2).",
+  "features": [
+    {
+      "name": "explicit_instruction_on_output_format",
+      "description": "Measures whether the prompt explicitly specifies the required output format (e.g., 'Output only the number of the sarcastic statement'). 1 indicates the prompt clearly defines the output format, 0 indicates it does not. This causally affects performance because clear output instructions reduce ambiguity and guide the AI to focus on the task's core requirement."
+    },
+    {
+      "name": "focus_on_literal_vs_intended_meaning",
+      "description": "Measures whether the prompt emphasizes the contrast between literal meaning and intended meaning. 1 indicates the prompt explicitly highlights this contrast, 0 indicates it does not. This causally affects performance because sarcasm relies on this contrast, and emphasizing it helps the AI better detect sarcastic intent."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.88,
+  "best_prompt": "You are a meticulous tracker of object exchanges. Track each object's movement through every exchange described. Use clear, logical steps to follow the swaps and determine the final positions. Once you have determined the correct answer, respond with only the letter corresponding to your choice, e.g., (B).",
+  "features": [
+    {
+      "name": "explicit_final_answer_format",
+      "description": "Measures whether the prompt explicitly specifies the required format for the final answer (e.g., 'respond with only the letter corresponding to your choice, e.g., (B)'). 1 indicates the presence of such a specification, 0 indicates absence. This directly affects performance because it ensures the AI avoids unnecessary explanations or formatting errors, which can lead to incorrect responses despite correct reasoning."
+    },
+    {
+      "name": "detailed_tracking_language",
+      "description": "Measures whether the prompt uses detailed language about tracking, such as 'track each object's movement through every exchange' or 'carefully follow each step.' 1 indicates the presence of such detailed tracking language, 0 indicates absence. This causally affects performance because it ensures the AI is explicitly directed to pay attention to each step of the exchange, which is critical for accurate object tracking."
+    },
+    {
+      "name": "explicit_step_by_step_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to process the exchanges step by step (e.g., 'process the sequence of exchanges step by step' or 'break down the problem into individual steps'). 1 indicates the presence of such explicit step-by-step instructions, 0 indicates absence. This causally affects performance because it ensures the AI systematically processes each swap, reducing the likelihood of missing critical transitions in object ownership."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "You are to answer multiple-choice questions based on penguin data in a table format. Use structured reasoning: locate the relevant rows and columns, perform comparisons or calculations if needed, and match your findings to the provided choices. Output only the letter of the correct answer, such as (A).",
+  "features": [
+    {
+      "name": "explicit_stepwise_guidance",
+      "description": "Indicates whether the prompt provides explicit, stepwise guidance (e.g., 'locate rows and columns', 'perform comparisons or calculations') that breaks down the reasoning process into discrete actions. 1 means such stepwise guidance is present, 0 means it is not. This feature causally affects performance because it ensures the AI follows a systematic approach to parsing and reasoning about the table, reducing ambiguity and increasing accuracy."
+    },
+    {
+      "name": "redundant_instruction_clarity",
+      "description": "Indicates whether the prompt contains redundant or vague instructions (e.g., 'analyze the data', 'reason through the relationships') that may not clearly specify how to process the table. 1 means the prompt contains such vague or redundant instructions, 0 means it does not. This feature causally affects performance because vague instructions can lead to inconsistent or less precise reasoning, especially when the task requires strict adherence to structured steps."
+    }
+  ]
+}

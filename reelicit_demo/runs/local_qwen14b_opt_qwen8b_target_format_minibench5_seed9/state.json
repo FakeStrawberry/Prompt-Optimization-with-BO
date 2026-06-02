@@ -1,0 +1,11 @@
+{
+  "iteration": 1,
+  "best_score": 0.6,
+  "best_prompt": "Given two very similar statements, your job is to identify which one is sarcastic. Focus on subtle cues in tone, word choice, and implied meaning. Sarcasm often involves saying the opposite of what is meant, or expressing something in a way that contradicts the literal meaning. Use your understanding of language nuances to make the best judgment. Respond with just the letter (A or B) indicating the sarcastic statement.",
+  "features": [
+    {
+      "name": "nuance_instruction_clarity",
+      "description": "Measures whether the prompt explicitly emphasizes the need to focus on subtle cues like tone, word choice, and implied meaning. 1 indicates the prompt includes such guidance, which directly improves the AI's ability to detect sarcasm by focusing on pragmatic and contextual signals. 0 indicates the prompt lacks this guidance, leading to a more literal or surface-level analysis."
+    }
+  ]
+}

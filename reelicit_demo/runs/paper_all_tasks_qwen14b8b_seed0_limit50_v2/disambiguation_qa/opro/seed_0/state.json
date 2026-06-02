@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "opro",
+  "best_score": 0.64,
+  "best_prompt": "You are a coreference resolution expert. Given a sentence with an ambiguous pronoun and multiple possible antecedents, your task is to determine which entity the pronoun refers to. Carefully analyze the sentence, consider the context, and choose the most likely referent from the provided options. Answer with only the letter corresponding to your choice, such as (A)."
+}

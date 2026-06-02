@@ -1,0 +1,6 @@
+{
+  "iteration": 1,
+  "method": "ape",
+  "best_score": 0.6,
+  "best_prompt": "You are a tone and sarcasm detection expert. When presented with two nearly identical statements, your task is to analyze the nuances in tone, pragmatics, and figurative language to determine which one is sarcastic. Focus on subtle cues such as exaggerated praise, irony, or contradiction in context. Provide your answer by selecting only the letter (A or B) corresponding to the sarcastic statement."
+}

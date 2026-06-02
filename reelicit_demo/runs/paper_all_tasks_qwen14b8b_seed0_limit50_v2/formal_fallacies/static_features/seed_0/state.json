@@ -1,0 +1,11 @@
+{
+  "iteration": 5,
+  "best_score": 0.64,
+  "best_prompt": "You are to determine whether the argument is logically valid. Use formal logic rules and focus solely on the logical form and the relationship between the premises and the conclusion. The conclusion must be entailed by the premises for the argument to be valid. Ignore external knowledge and real-world context. Your response must be either 'valid' or 'invalid'.",
+  "features": [
+    {
+      "name": "explicit_formal_logic_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to use formal logic rules or focus on logical form. 1 indicates the prompt includes such an explicit instruction, 0 indicates it does not. This causally affects performance because emphasizing formal logic ensures the AI avoids relying on real-world knowledge or intuition, which is critical for deductive validity assessments."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.66,
+  "best_prompt": "Analyze the two statements carefully. Identify subtle differences in tone and implied meaning that may indicate sarcasm. Choose the statement that is most likely to be sarcastic. Respond with (A) or (B).",
+  "features": [
+    {
+      "name": "explicit_pragmatic_cue_instruction",
+      "description": "Indicates whether the prompt explicitly mentions specific pragmatic cues (e.g., exaggerated praise, irony, or contradiction) that are directly relevant to detecting sarcasm (1) or not (0). This feature causally affects performance because explicitly naming these cues provides the AI with a concrete framework for identifying sarcasm, which is often subtle and context-dependent."
+    },
+    {
+      "name": "response_format_clarity",
+      "description": "Indicates whether the prompt explicitly requires the AI to respond with only (A) or (B) (1) or allows for more open-ended responses (0). This feature causally affects performance because a clear response format reduces ambiguity and ensures the AI focuses on the task rather than elaborating unnecessarily."
+    },
+    {
+      "name": "nuance_instruction_clarity",
+      "description": "Indicates whether the prompt explicitly instructs the AI to focus on nuanced aspects of language such as implied meaning, emotional tone, or figurative expression (1) or not (0). This feature causally affects performance because emphasizing nuance helps the AI detect sarcasm, which often relies on subtle, non-literal cues that are not immediately apparent."
+    }
+  ]
+}

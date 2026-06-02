@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.88,
+  "best_prompt": "Your task is to analyze a table containing penguin attributes and answer a question by selecting the correct option from the choices provided. Use clear, logical steps to process the data and ensure your answer is based solely on the information in the table. Output only the letter of the correct choice, e.g., (A).",
+  "features": [
+    {
+      "name": "explicit_step_by_step_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to process the data in a step-by-step manner (e.g., 'identify relevant columns', 'filter data', 'select answer'). 1 indicates the presence of such instructions, 0 indicates absence. This directly influences performance because structured processing improves accuracy in tabular reasoning tasks."
+    },
+    {
+      "name": "task_specific_language_clarity",
+      "description": "Measures whether the prompt uses clear, task-specific language that directly references the penguin attributes (name, age, height, weight) and the reasoning process. 1 indicates the presence of such clarity, 0 indicates absence. Clear task-specific language improves performance by reducing ambiguity and guiding the AI toward the correct reasoning process."
+    },
+    {
+      "name": "output_example_inclusion",
+      "description": "Measures whether the prompt includes an explicit example of the desired output format (e.g., 'e.g., (A)'). 1 indicates the presence of such an example, 0 indicates absence. Including an example helps the AI understand the required output format and reduces ambiguity, which improves performance."
+    }
+  ]
+}

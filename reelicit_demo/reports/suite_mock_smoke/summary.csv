@@ -1,0 +1,10 @@
+task,method,seed,n_evals,best_score,run_dir
+snarks,reelicit,0,4,0.5305786683148901,runs/suite_mock_smoke/snarks/reelicit/seed_0
+snarks,ape,0,4,0.5125255959833899,runs/suite_mock_smoke/snarks/ape/seed_0
+snarks,opro,0,4,0.5125255959833899,runs/suite_mock_smoke/snarks/opro/seed_0
+snarks,promptbreeder,0,4,0.5125255959833899,runs/suite_mock_smoke/snarks/promptbreeder/seed_0
+snarks,textgrad,0,4,0.5125255959833899,runs/suite_mock_smoke/snarks/textgrad/seed_0
+snarks,no_refinement,0,4,0.5305786683148901,runs/suite_mock_smoke/snarks/no_refinement/seed_0
+snarks,no_bo,0,4,0.5922460420511909,runs/suite_mock_smoke/snarks/no_bo/seed_0
+snarks,static_features,0,4,0.5305786683148901,runs/suite_mock_smoke/snarks/static_features/seed_0
+snarks,independent_extraction,0,4,0.5305786683148901,runs/suite_mock_smoke/snarks/independent_extraction/seed_0

@@ -1,0 +1,11 @@
+{
+  "iteration": 1,
+  "best_score": 0.5,
+  "best_prompt": "You are an AI assistant trained to detect sarcasm in language. When presented with two nearly identical statements, your task is to determine which one is sarcastic. Analyze the tone, context, and use of figurative language to make your judgment. Respond with only the letter of the sarcastic statement (A or B).",
+  "features": [
+    {
+      "name": "explicit_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to focus on tone, context, and figurative language (1) versus using more general terms like 'intent' and 'subtle cues' (0). Clear, specific instructions causally improve performance by directly guiding the AI to focus on the key factors needed to detect sarcasm."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.651685393258427,
+  "best_prompt": "Your task is to compare two nearly identical statements and determine which one contains sarcasm. Consider the use of irony, exaggerated language, and the speaker's intent. Your response should be a single letter: (A) or (B), indicating the sarcastic statement.",
+  "features": [
+    {
+      "name": "sarcasm_cue_specificity",
+      "description": "Measures whether the prompt explicitly lists specific sarcasm cues (e.g., irony, tone, figurative language) that the AI should focus on. A value of 1 indicates the prompt explicitly names multiple specific cues, while 0 indicates it does not. This directly affects performance because listing specific cues provides the AI with a clear framework to analyze tone and intent, improving its ability to distinguish sarcasm from literal language."
+    },
+    {
+      "name": "contextual_guidance",
+      "description": "Measures whether the prompt provides explicit contextual guidance on how to differentiate between sarcasm and literal meaning, such as emphasizing pragmatics, implied meaning, or speaker intent. A value of 1 indicates the prompt includes such guidance, while 0 indicates it does not. This affects performance because contextual guidance helps the AI focus on the subtleties of tone and intent, which are critical for sarcasm detection."
+    }
+  ]
+}

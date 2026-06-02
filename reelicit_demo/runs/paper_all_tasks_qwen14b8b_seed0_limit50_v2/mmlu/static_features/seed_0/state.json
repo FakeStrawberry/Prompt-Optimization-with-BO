@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.9,
+  "best_prompt": "Analyze the question and all answer choices carefully, apply your knowledge to identify the most accurate response, and select the correct option. Provide only the letter (A, B, C, or D) corresponding to your answer.",
+  "features": [
+    {
+      "name": "explicit_methodology_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to follow a methodical process (e.g., 'read the question thoroughly', 'eliminate incorrect options', 'apply factual knowledge'). 1 indicates the presence of such explicit methodology guidance, 0 indicates absence. This feature causally affects performance because clear procedural guidance improves systematic reasoning and reduces errors in answer selection."
+    },
+    {
+      "name": "response_format_restrictiveness",
+      "description": "Measures how strictly the prompt enforces the response format (e.g., 'respond with only the letter', 'no additional text'). 1 indicates strict enforcement of the response format, 0 indicates a more general or less restrictive instruction. This feature causally affects performance because strict format requirements reduce the likelihood of the AI including irrelevant text or explanations, which can interfere with accuracy."
+    }
+  ]
+}

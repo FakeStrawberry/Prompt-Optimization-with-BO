@@ -1,0 +1,11 @@
+{
+  "iteration": 5,
+  "best_score": 0.6,
+  "best_prompt": "Follow these steps: 1) Read the sentence carefully. 2) Identify the pronoun in question. 3) Review the list of possible entities. 4) Determine which entity the pronoun most logically refers to. 5) Output only the letter of your selected answer. This task requires strong coreference resolution skills.",
+  "features": [
+    {
+      "name": "explicit_step_guidance",
+      "description": "Measures whether the prompt includes explicit, step-by-step instructions for solving the task. 1 indicates the presence of such guidance, 0 indicates its absence. This directly affects performance because structured steps help the AI systematically approach coreference resolution, reducing ambiguity and improving accuracy."
+    }
+  ]
+}

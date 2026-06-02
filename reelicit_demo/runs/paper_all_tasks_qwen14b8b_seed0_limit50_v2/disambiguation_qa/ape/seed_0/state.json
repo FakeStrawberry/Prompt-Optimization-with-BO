@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "ape",
+  "best_score": 0.6,
+  "best_prompt": "Your task is to resolve coreference in the provided sentence. The pronoun is ambiguous, and you must choose the correct referent from the given options. Focus on contextual clues, grammatical structure, and logical coherence. Output only the letter corresponding to your answer, e.g., (D)."
+}

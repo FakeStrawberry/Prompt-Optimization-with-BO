@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "ape",
+  "best_score": 0.78,
+  "best_prompt": "You are to analyze the penguin data table and answer the question by selecting the correct option. Use structured reasoning: identify the relevant column(s), compare values, and match the result to the correct choice. Output only the letter of the correct answer (e.g., D)."
+}

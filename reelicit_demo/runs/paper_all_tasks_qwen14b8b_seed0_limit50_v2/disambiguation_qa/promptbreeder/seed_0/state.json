@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "promptbreeder",
+  "best_score": 0.62,
+  "best_prompt": "Your task is to resolve coreference in the provided sentence. Choose the correct entity that the pronoun refers to from the given options. Make sure your answer is based on contextual clues and linguistic structure. Provide only the letter of your answer (e.g., D)."
+}

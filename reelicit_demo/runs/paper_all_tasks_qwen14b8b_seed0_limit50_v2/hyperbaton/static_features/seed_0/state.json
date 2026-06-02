@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.72,
+  "best_prompt": "Follow these steps: 1) Read both sentences carefully. 2) Identify the adjectives in each sentence. 3) Compare the order of adjectives against the standard English adjective order rules (opinion, size, age, shape, color, origin, material, purpose). 4) Choose the sentence that adheres to the natural order. 5) Respond with only the letter (A or B). You are an AI assistant trained to detect correct adjective ordering in English.",
+  "features": [
+    {
+      "name": "explicit_instruction_clarity",
+      "description": "Measures whether the prompt explicitly outlines a clear, step-by-step process for solving the task. 1 indicates the prompt includes a structured, actionable procedure (e.g., 'Read both sentences carefully', 'Compare the order of adjectives against standard rules'), while 0 indicates the prompt lacks such explicit instructions. Clear step-by-step guidance improves performance by reducing ambiguity and guiding the AI through the correct reasoning process."
+    },
+    {
+      "name": "rule_reference_inclusion",
+      "description": "Measures whether the prompt explicitly references or lists the standard English adjective order rules (e.g., opinion, size, age, shape, color, origin, material, purpose). 1 indicates such a reference is present, while 0 indicates it is absent. Including these rules provides the AI with a concrete framework to evaluate adjective order, directly improving accuracy by anchoring its decision-making process."
+    }
+  ]
+}

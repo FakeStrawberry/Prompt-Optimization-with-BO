@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "Analyze the boolean expression provided and determine its truth value. Use proper logical evaluation rules and pay attention to operator precedence. Your answer must be concise and precise: either 'True' or 'False' with no additional information.",
+  "features": [
+    {
+      "name": "operator_precedence_clarity",
+      "description": "Measures whether the prompt explicitly mentions operator precedence rules (e.g., 'not' > 'and' > 'or'). 1 indicates the prompt clearly specifies precedence, 0 indicates it does not. This directly affects performance because clarity on precedence reduces errors in evaluation."
+    },
+    {
+      "name": "output_concision_requirement",
+      "description": "Measures whether the prompt explicitly requires the assistant to output only 'True' or 'False' with no additional text. 1 indicates such a requirement is present, 0 indicates it is absent. This improves performance by reducing ambiguity and ensuring the model adheres to the required output format."
+    }
+  ]
+}

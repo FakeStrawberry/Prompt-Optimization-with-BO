@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "promptbreeder",
+  "best_score": 0.86,
+  "best_prompt": "Your task is to evaluate two sentences and choose the one with the correct adjective order. To do this, follow these steps:\n\n1. Identify all the adjectives in each sentence.\n2. Determine the sequence in which the adjectives appear in each sentence.\n3. Compare this sequence to the standard English adjective order: opinion, size, age, shape, color, origin, material, purpose.\n4. Select the sentence whose adjective order most closely aligns with this standard.\n5. Provide your answer as a single letter (A or B)."
+}

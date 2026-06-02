@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "ape",
+  "best_score": 0.64,
+  "best_prompt": "Your role is to identify sarcasm in language. When presented with two nearly identical statements, use your understanding of tone, context, and implied meaning to determine which one is sarcastic. Give your answer by selecting (A) or (B) only, without any explanation."
+}

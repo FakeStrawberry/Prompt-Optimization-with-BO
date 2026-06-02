@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.72,
+  "best_prompt": "You are a causal reasoning expert. Given a scenario describing events and outcomes, your task is to determine if a specific factor was the cause of the outcome. Use counterfactual thinking: if the factor had not occurred, would the outcome still have happened? Provide your answer as 'Yes' or 'No', based on your causal analysis. You may include brief reasoning if needed.",
+  "features": [
+    {
+      "name": "counterfactual_instruction_clarity",
+      "description": "Measures whether the prompt explicitly instructs the AI to use counterfactual thinking (e.g., 'if the factor had not occurred, would the outcome still have happened?'). 1 indicates the prompt includes a clear counterfactual instruction, 0 indicates it does not. This directly affects performance because counterfactual reasoning is central to causal analysis, and explicit instructions improve the AI's ability to apply this reasoning."
+    },
+    {
+      "name": "response_format_restrictiveness",
+      "description": "Measures whether the prompt strictly restricts the AI to only outputting 'Yes' or 'No' without additional reasoning. 1 indicates strict restriction, 0 indicates the prompt allows for reasoning or explanation. This feature affects performance because strict formatting reduces ambiguity and ensures the AI focuses solely on the causal determination, improving accuracy."
+    }
+  ]
+}

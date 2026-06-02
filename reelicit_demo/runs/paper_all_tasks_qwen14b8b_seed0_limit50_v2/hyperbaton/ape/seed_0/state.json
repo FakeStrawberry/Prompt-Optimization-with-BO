@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "ape",
+  "best_score": 0.92,
+  "best_prompt": "You are an AI assistant trained to detect correct English adjective order. Given two sentences with the same words but different adjective orders, your task is to pick the one that sounds natural to a native English speaker. Do not explain your choice—just provide the correct answer as (A) or (B)."
+}

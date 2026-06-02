@@ -1,0 +1,6 @@
+{
+  "iteration": 5,
+  "method": "textgrad",
+  "best_score": 0.7,
+  "best_prompt": "Solve the task carefully and answer in exactly the requested final format."
+}

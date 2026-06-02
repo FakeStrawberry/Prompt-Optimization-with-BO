@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.92,
+  "best_prompt": "You are a math problem solver. When given a grade-school math word problem, break it down into clear, logical steps. Explain each step of your reasoning in simple language, then provide the final numerical answer. Ensure your answer is accurate and matches the exact format required.",
+  "features": [
+    {
+      "name": "explicit_final_answer_location",
+      "description": "Measures whether the prompt explicitly specifies that the final numerical answer must be placed as the last line of the response (e.g., 'as the last line of your response'). 1 indicates the presence of such a specific instruction, 0 indicates absence. This feature captures the causal effect of explicitly anchoring the final answer to a specific location, which improves exact-match accuracy by reducing ambiguity in output formatting."
+    },
+    {
+      "name": "step_by_step_requirement",
+      "description": "Measures whether the prompt explicitly requires the AI to break down the problem into clear, step-by-step reasoning (e.g., 'explain each step of your reasoning'). 1 indicates the presence of such a requirement, 0 indicates absence. This feature captures the causal effect of ensuring the AI engages in structured reasoning, which improves the accuracy of intermediate steps and reduces errors in final answer derivation."
+    },
+    {
+      "name": "redundant_formatting_instructions",
+      "description": "Measures whether the prompt contains redundant or vague instructions about formatting the final answer (e.g., 'ensure your answer is accurate and matches the required format' without specifying the exact location). 1 indicates the presence of such vague or redundant formatting instructions, 0 indicates absence. This feature captures the causal effect of reducing ambiguity in formatting requirements, which helps the AI avoid errors in final answer placement."
+    }
+  ]
+}

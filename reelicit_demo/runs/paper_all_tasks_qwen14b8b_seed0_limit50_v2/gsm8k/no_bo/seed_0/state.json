@@ -1,0 +1,23 @@
+{
+  "iteration": 5,
+  "best_score": 0.9,
+  "best_prompt": "Solve the given math word problem by following a structured approach. First, read the problem carefully. Then, identify the relevant numbers and operations. Perform the calculations step by step, and conclude with the final answer. Ensure your answer is precise and matches the required format.",
+  "features": [
+    {
+      "name": "explicit_final_answer_box",
+      "description": "Indicates whether the prompt explicitly requires the final answer to be presented in a box (e.g., 'in a box at the end'). 1 means the instruction is present; 0 means it is not. This feature is causal because explicitly requiring a boxed final answer improves the likelihood of the AI producing the exact format needed for exact-match accuracy, which is critical for scoring well on this task."
+    },
+    {
+      "name": "structured_step_instruction",
+      "description": "Indicates whether the prompt explicitly instructs the AI to follow a structured, step-by-step approach (e.g., 'break the problem into logical steps', 'perform calculations step by step'). 1 means the instruction is present; 0 means it is not. This feature is causal because a structured approach ensures the AI engages in systematic reasoning, which is essential for solving multi-step arithmetic problems accurately."
+    },
+    {
+      "name": "redundant_format_instruction",
+      "description": "Indicates whether the prompt contains redundant or vague instructions about formatting (e.g., 'ensure your answer is precise and matches the required format' without explicitly stating the format). 1 means the instruction is present; 0 means it is not. This feature is causal because vague or redundant formatting instructions can confuse the AI, reducing the likelihood of it following the exact format needed for exact-match accuracy."
+    },
+    {
+      "name": "explicit_instruction_to_conclude",
+      "description": "Indicates whether the prompt explicitly instructs the AI to conclude with the final answer (e.g., 'conclude with the final answer', 'present the correct numerical answer at the end'). 1 means the instruction is present; 0 means it is not. This feature is causal because explicitly instructing the AI to conclude with the final answer ensures that the AI does not omit the final answer, which is critical for exact-match accuracy."
+    }
+  ]
+}

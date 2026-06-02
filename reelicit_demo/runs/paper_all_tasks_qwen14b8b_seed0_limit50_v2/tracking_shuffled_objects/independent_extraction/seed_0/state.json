@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.88,
+  "best_prompt": "Use a structured approach: list each person and the objects they start with, then update the list after each exchange. After all swaps are completed, cross-reference the final positions with the answer choices and select the correct one. Output only the letter of your answer, such as (A).",
+  "features": [
+    {
+      "name": "explicit_initial_state",
+      "description": "Measures whether the prompt explicitly instructs the AI to list each person and the objects they start with before processing exchanges. 1 indicates the presence of such a directive, 0 indicates the absence. This feature causally affects performance because specifying the initial state provides a clear starting point for tracking, reducing ambiguity in object movements and improving accuracy in final position determination."
+    },
+    {
+      "name": "final_choice_verification",
+      "description": "Measures whether the prompt explicitly instructs the AI to cross-reference or verify the final positions with the answer choices before selecting the correct one. 1 indicates the presence of such a directive, 0 indicates the absence. This feature causally affects performance because an explicit final check ensures accuracy in matching the tracked positions to the correct answer, reducing selection errors."
+    },
+    {
+      "name": "step_by_step_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to process exchanges in a step-by-step manner, updating object locations after each swap. 1 indicates the presence of such instructions, 0 indicates the absence. This feature causally affects performance because step-by-step processing ensures systematic tracking of object movements, reducing errors in final position determination."
+    }
+  ]
+}

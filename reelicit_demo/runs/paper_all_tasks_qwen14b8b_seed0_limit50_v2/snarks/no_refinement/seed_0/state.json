@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.6,
+  "best_prompt": "Carefully compare the two statements. Look for clues in word choice, punctuation, and implied meaning that suggest sarcasm. Sarcasm often uses irony or exaggerated praise to express the opposite of what is literally said. Choose the sarcastic statement by answering with (A) or (B).",
+  "features": [
+    {
+      "name": "explicit_sarcasm_definition",
+      "description": "Indicates whether the prompt explicitly defines sarcasm in terms of its pragmatic, tonal, or ironic characteristics (1) or not (0). This directly influences the AI's ability to recognize sarcasm by providing a clear framework for analysis, which is crucial for distinguishing between literal and figurative meaning."
+    },
+    {
+      "name": "detailed_analysis_guidance",
+      "description": "Indicates whether the prompt explicitly guides the AI to analyze specific aspects of the statements (e.g., word choice, punctuation, implied meaning, irony, exaggerated praise, emotional tone) (1) or provides only general guidance (0). Detailed guidance helps the AI focus on the specific cues that are most indicative of sarcasm, improving accuracy by narrowing the analysis to relevant features."
+    },
+    {
+      "name": "task_specific_instruction_clarity",
+      "description": "Indicates whether the prompt clearly specifies the exact task and response format (e.g., 'Choose the sarcastic statement by answering with (A) or (B)') (1) or is vague about the required output (0). Clear task instructions reduce ambiguity and ensure the AI focuses on the correct objective, directly improving performance by minimizing misinterpretation of the task."
+    }
+  ]
+}

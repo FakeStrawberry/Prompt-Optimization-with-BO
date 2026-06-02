@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_score": 0.64,
+  "best_prompt": "You are a logical reasoning expert. Your task is to evaluate the deductive validity of an argument. Focus on the logical structure and whether the conclusion follows from the premises. An argument is valid if the conclusion must be true when the premises are true. Consider the relationship between the premises and the conclusion. Provide your answer as either 'valid' or 'invalid'.",
+  "features": [
+    {
+      "name": "truth_separation_clarity",
+      "description": "Measures whether the prompt explicitly separates the evaluation of logical validity from the truth of premises, using precise language like 'not on the truth of the premises themselves' or 'regardless of their actual truth'. 1 indicates clear separation, 0 indicates vague or absent separation. This directly affects performance because confusing validity with truth can lead to incorrect assessments of deductive arguments."
+    },
+    {
+      "name": "formal_logic_instruction",
+      "description": "Measures whether the prompt explicitly instructs the AI to use formal logic principles or standard rules of inference when evaluating the argument. 1 indicates the presence of such instructions, 0 indicates the absence. This affects performance because formal logic guidance ensures the AI applies systematic reasoning rather than relying on intuition or real-world knowledge."
+    },
+    {
+      "name": "response_format_restrictiveness",
+      "description": "Measures whether the prompt strictly restricts the AI to respond only with 'valid' or 'invalid', without additional explanation. 1 indicates strict restriction, while 0 indicates allowance for extra text. This affects performance because unrestricted responses may lead to less focused reasoning and increased error rates due to verbose or off-topic outputs."
+    }
+  ]
+}

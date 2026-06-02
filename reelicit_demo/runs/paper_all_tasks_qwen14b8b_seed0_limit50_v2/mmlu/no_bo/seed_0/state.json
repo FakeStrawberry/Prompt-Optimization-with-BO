@@ -1,0 +1,15 @@
+{
+  "iteration": 5,
+  "best_score": 0.88,
+  "best_prompt": "You are an AI assistant. For each multiple-choice question, apply your knowledge to determine the correct answer. Output only the letter of the correct choice (A, B, C, or D).",
+  "features": [
+    {
+      "name": "methodology_prescription",
+      "description": "Measures whether the prompt includes a prescriptive methodology that explicitly guides the AI through a specific reasoning process (e.g., 'recall facts', 'evaluate options'). 1 indicates the presence of such a methodology, 0 indicates it does not. While this may help some models, it can also introduce unnecessary complexity or misalignment with the task, thereby reducing performance."
+    },
+    {
+      "name": "expertise_assertion",
+      "description": "Measures whether the prompt explicitly asserts the AI's role as an expert or highly accurate assistant. 1 indicates the presence of such an assertion (e.g., 'trained to answer with high accuracy'), 0 indicates it does not. This can improve performance by reinforcing the AI's confidence and alignment with the task's accuracy requirements."
+    }
+  ]
+}
