@@ -265,7 +265,7 @@ ReElicit 的平均 best score 为 `0.796`，排名第 3，只比最高的 `indep
 | 总任务均值轨迹 CSV | `reelicit_demo/reports/paper_all_tasks_qwen14b8b_seed0_limit50_v2/aggregate_convergence_mean_across_tasks.csv` |
 | 图像目录 | `reelicit_demo/reports/paper_all_tasks_qwen14b8b_seed0_limit50_v2/figures/` |
 
-## 11. 可以向学长汇报的简短结论
+## 11. 简短结论
 
 我已经复现了论文 ReElicit 的核心算法流程，包括主方法、主要 baseline 和多个消融方法，并在本地 Qwen3-14B optimizer + Qwen3-8B target 设置下完成了 10 个任务、9 种方法、总计 90 组实验。
 
